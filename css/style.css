@@ -1,0 +1,1906 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Bungee Shade', cursiva 'Orbitron', sans-serif;
+  background: white;
+}
+
+body {
+  background-color: white;
+  background-image: linear-gradient(to left, #54718e, white);
+}
+
+/*  HEADER Y BARRA DE NAVEGACION */
+.menu {
+  width: 100%;
+  height: 100px;
+  background-color: #24303c;
+  border: #24303c solid 5px;
+  display: grid;
+  grid-template-columns: 15% 25% 15% 15% 15% 15%;
+  grid-template-rows: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.navbar-dark {
+  background-color: #24303c;
+}
+
+.menu__logo {
+  width: 150px;
+  height: 60px;
+  margin-left: 40px;
+  margin-top: 14px;
+}
+
+.menu__titulo {
+  text-decoration: none;
+  font-size: 35px;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: 'Bungee Shade', cursiva 'Orbitron', sans-serif;
+  color: black;
+}
+
+.menu__inicio {
+  font-size: 25px;
+  text-transform: uppercase;
+  font-family: 'Bungee Shade', cursiva 'Orbitron', sans-serif;
+  color: black;
+  margin-right: 10%;
+}
+
+.menu__productos {
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  justify-self: center;
+  font-family: 'Bungee Shade', cursiva 'Orbitron', sans-serif;
+  color: black;
+  font-size: 22px;
+}
+
+.menu__promociones {
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: 'Bungee Shade', cursiva 'Orbitron', sans-serif;
+  color: black;
+  font-size: 22px;
+}
+
+.menu__registro {
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: 'Bungee Shade', cursiva 'Orbitron', sans-serif;
+  color: black;
+  font-size: 22px;
+}
+
+.menu__compra {
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: 'Bungee Shade', cursiva 'Orbitron', sans-serif;
+  color: black;
+  font-size: 22px;
+}
+
+.imagen__inicio {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+  height: 20%;
+}
+
+/* body y section principal pagina  */
+.buscados {
+  font-family: 'Bungee Shade', cursiva 'Orbitron', sans-serif;
+  color: #24303c;
+  text-transform: uppercase;
+  font-size: 40px;
+  border: 2px solid #24303c;
+  text-align: center;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  color: #24303c;
+}
+
+.articulos {
+  margin: 20px;
+  width: 98%;
+  height: 280px;
+  display: grid;
+  grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+  grid-template-rows: 80px 80px 80px 80px 80px 80px 80px 80px 80px;
+  grid-template-areas: " ele1 ele1 ele2 ele6 ele6 ele7 ele11 ele11 ele12" " ele1 ele1 ele2  ele6 ele6 ele7 ele11 ele11 ele12" " ele3 ele4 ele5  ele8 ele9 ele10 ele13 ele14 ele15";
+  border: #b4c0cd solid 0.5px;
+  justify-content: space-around;
+  align-items: center;
+  justify-items: stretch;
+}
+
+.articulos__imagen1 {
+  grid-area: ele1;
+  margin: 10px;
+  height: 90%;
+  width: 270px;
+  transform: scaleX(0.9);
+  transition: transform 2s;
+}
+
+.articulos__imagen1:hover {
+  transform: scaley(1.2);
+}
+
+.articulos__imagen2:hover {
+  transform: scaley(1.2);
+}
+
+.articulos__imagen3:hover {
+  transform: scaley(1.2);
+}
+
+.articulos__texto1 {
+  grid-area: ele2;
+  font-family: 'Bungee Shade', cursiva 'Orbitron', sans-serif;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #24303c;
+  justify-self: center;
+  transform: translateX(-10px);
+}
+
+.articulos__comprar1 {
+  grid-area: ele3;
+  margin-left: 25px;
+  height: 35px;
+  width: 90px;
+  font-family: 'Bungee Shade', cursiva 'Orbitron', sans-serif;
+  font-size: 15px;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #24303c;
+  color: white;
+  border-radius: 10px;
+  transform: translateX(25px);
+}
+
+.articulos__cantidad1 {
+  grid-area: ele4;
+  font-family: 'Bungee Shade', cursiva 'Orbitron', sans-serif;
+  font-size: 12px;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #24303c;
+  color: white;
+  height: 32px;
+  width: 60px;
+  border-radius: 5px;
+  transform: translateX(-5px);
+}
+
+.articulos__precios1 {
+  grid-area: ele5;
+  font-size: 25px;
+  font-family: 'Bungee Shade', cursiva 'Orbitron', sans-serif;
+  color: #24303c;
+}
+
+.articulos__imagen2 {
+  grid-area: ele6;
+  margin: 10px;
+  height: 90%;
+  width: 270px;
+  transform: scaleX(0.9);
+  transition: transform 2s;
+}
+
+.articulos__imagen3 {
+  grid-area: ele11;
+  margin: 10px;
+  height: 90%;
+  width: 270px;
+  transform: scaleX(0.9);
+  transition: transform 2s;
+}
+
+.articulos__texto2 {
+  grid-area: ele7;
+  font-family: 'Bungee Shade', cursiva 'Orbitron', sans-serif;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #24303c;
+  transform: translateX(-10px);
+}
+
+.articulos__texto3 {
+  grid-area: ele12;
+  font-family: 'Bungee Shade', cursiva 'Orbitron', sans-serif;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #24303c;
+  transform: translateX(-10px);
+}
+
+.articulos__comprar2 {
+  grid-area: ele8;
+  margin-left: 25px;
+  height: 35px;
+  width: 90px;
+  font-family: 'Bungee Shade', cursiva 'Orbitron', sans-serif;
+  font-size: 15px;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #24303c;
+  color: white;
+  border-radius: 10px;
+  transform: translateX(25px);
+}
+
+.articulos__comprar3 {
+  grid-area: ele13;
+  margin-left: 25px;
+  height: 35px;
+  width: 90px;
+  font-family: 'Bungee Shade', cursiva 'Orbitron', sans-serif;
+  font-size: 15px;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #24303c;
+  color: white;
+  border-radius: 10px;
+  transform: translateX(25px);
+}
+
+.articulos__cantidad2 {
+  grid-area: ele9;
+  font-family: 'Bungee Shade', cursiva 'Orbitron', sans-serif;
+  font-size: 12px;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #24303c;
+  color: white;
+  height: 32px;
+  width: 60px;
+  border-radius: 5px;
+  transform: translateX(-5px);
+}
+
+.articulos__cantidad3 {
+  grid-area: ele14;
+  font-family: 'Bungee Shade', cursiva 'Orbitron', sans-serif;
+  font-size: 12px;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #24303c;
+  color: white;
+  height: 32px;
+  width: 60px;
+  border-radius: 5px;
+  transform: translateX(-5px);
+}
+
+.articulos__precios2 {
+  grid-area: ele10;
+  font-size: 22px;
+  font-family: 'Bungee Shade', cursiva 'Orbitron', sans-serif;
+  color: #24303c;
+  transform: scale(1.2);
+}
+
+.articulos__precios3 {
+  grid-area: ele15;
+  font-size: 22px;
+  font-family: 'Bungee Shade', cursiva 'Orbitron', sans-serif;
+  color: #24303c;
+  transform: scale(1.2);
+}
+
+.footer1 {
+  width: 100%;
+  height: 80px;
+  background-color: #24303c;
+  display: grid;
+  grid-template-columns: 35% 16% 16% 16% 15%;
+  align-items: center;
+  justify-content: center;
+  bottom: 0px;
+}
+
+.footer1__imagen {
+  width: 150px;
+  height: 60px;
+  margin-left: 40px;
+}
+
+.footer1__redes {
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: 'Bungee Shade', cursiva 'Orbitron', sans-serif;
+  color: black;
+  font-size: 18px;
+}
+
+.formulario {
+  width: 400px;
+  padding: 30px;
+  margin: auto;
+  margin-bottom: 10%;
+  background-color: #24303c;
+  border-radius: 8px;
+  font-family: 'Bungee Shade', cursiva 'Orbitron', sans-serif;
+  margin-top: 100px;
+}
+
+/* TITULO FORMULARIO  */
+.formulario__titulo {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  font-size: 20px;
+  text-align: center;
+  color: white;
+}
+
+/* CAMPOS DEL FORMULARIO  */
+.formulario__campos {
+  width: 100%;
+  background: #24303c;
+  color: white;
+  padding: 10px;
+  font-family: 'Bungee Shade', cursiva 'Orbitron', sans-serif;
+  border-bottom: 20px;
+  border-radius: 10px;
+  border: 3px solid #1f03b8;
+  text-transform: uppercase;
+  margin: 10px;
+}
+
+/* BOTON REGISTRO FORMULARIO  */
+.formulario__boton {
+  display: block;
+  width: 50%;
+  margin: 15px;
+  height: 30px;
+  border-radius: 4px;
+  font-size: 15px;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.formulario__texto {
+  text-decoration: none;
+  color: white;
+  margin: 10px;
+  text-align: center;
+  text-decoration: none;
+  font-family: 'Bungee Shade', cursiva 'Orbitron', sans-serif;
+}
+
+/* PAGINA PRODUCTOS */
+.producto {
+  width: 95%;
+  height: 10%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: 16% 16% 16% 16% 16% 16%;
+  grid-template-rows: 45px 45px 45px 45px 45px 45px 45px;
+  grid-template-areas: "ele1 ele1 ele7 ele7 ele12 ele12" "ele1 ele1 ele7 ele7 ele12 ele12" "ele1 ele1 ele7 ele7 ele12 ele12" "ele1 ele1 ele7 ele7 ele12 ele12" "ele2 ele2 ele8 ele8 ele13 ele13" "ele3 ele4 ele9 ele10 ele14 ele15" "ele5 ele5 ele11 ele11 ele16 ele16";
+  border: #b4c0cd solid 0.5px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.producto__imagen1 {
+  grid-area: ele1;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100%;
+  width: 80%;
+  margin: 5px;
+  transform: translatex(20px);
+}
+
+.producto__texto1 {
+  grid-area: ele2;
+  font-family: 'Bungee Shade', cursiva 'Orbitron', sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #24303c;
+  justify-self: center;
+  margin: 5px;
+}
+
+.producto__cantidad1 {
+  grid-area: ele3;
+  font-family: 'Bungee Shade', cursiva 'Orbitron', sans-serif;
+  font-size: 12px;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #24303c;
+  color: white;
+  height: 35px;
+  width: 60px;
+  border-radius: 8px;
+  justify-self: center;
+  margin-left: 20px;
+  transform: translateX(110px);
+}
+
+.producto__precio1 {
+  grid-area: ele4;
+  font-size: 25px;
+  font-family: 'Bungee Shade', cursiva 'Orbitron', sans-serif;
+  color: #24303c;
+}
+
+.producto__comprar1 {
+  grid-area: ele5;
+  height: 35px;
+  width: 90px;
+  font-family: 'Bungee Shade', cursiva 'Orbitron', sans-serif;
+  font-size: 15px;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #24303c;
+  color: white;
+  border-radius: 10px;
+  justify-self: center;
+}
+
+/* bloque centro  */
+.producto__imagen2 {
+  grid-area: ele7;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100%;
+  width: 80%;
+  margin: 5px;
+  transform: translatex(20px);
+}
+
+.producto__texto2 {
+  grid-area: ele8;
+  font-family: 'Bungee Shade', cursiva 'Orbitron', sans-serif;
+  font-size: 20px;
+  margin: 5px;
+  text-transform: uppercase;
+  color: #24303c;
+  justify-self: center;
+}
+
+.producto__cantidad2 {
+  grid-area: ele9;
+  font-family: 'Bungee Shade', cursiva 'Orbitron', sans-serif;
+  font-size: 10px;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #24303c;
+  color: white;
+  height: 35px;
+  width: 60px;
+  border-radius: 8px;
+  justify-self: center;
+  margin-left: 20px;
+  transform: translateX(110px);
+}
+
+.producto__precio2 {
+  grid-area: ele10;
+  font-size: 25px;
+  font-family: 'Bungee Shade', cursiva 'Orbitron', sans-serif;
+  color: #24303c;
+  justify-self: start;
+}
+
+.producto__comprar2 {
+  grid-area: ele11;
+  height: 35px;
+  width: 90px;
+  font-family: 'Bungee Shade', cursiva 'Orbitron', sans-serif;
+  font-size: 15px;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #24303c;
+  color: white;
+  border-radius: 10px;
+  justify-self: center;
+}
+
+/* bloque izquierda */
+.producto__imagen3 {
+  grid-area: ele12;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100%;
+  width: 80%;
+  margin: 5px;
+  transform: translatex(20px);
+}
+
+.producto__texto3 {
+  grid-area: ele13;
+  font-family: 'Bungee Shade', cursiva 'Orbitron', sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #24303c;
+  justify-self: center;
+  margin: 5px;
+}
+
+.producto__cantidad3 {
+  grid-area: ele14;
+  font-family: 'Bungee Shade', cursiva 'Orbitron', sans-serif;
+  font-size: 10px;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #24303c;
+  color: white;
+  height: 35px;
+  width: 60px;
+  border-radius: 8px;
+  justify-self: center;
+  margin-left: 20px;
+  transform: translateX(110px);
+}
+
+.producto__precio3 {
+  grid-area: ele15;
+  font-size: 25px;
+  font-family: 'Bungee Shade', cursiva 'Orbitron', sans-serif;
+  justify-self: start;
+}
+
+.producto__comprar3 {
+  grid-area: ele16;
+  height: 35px;
+  width: 90px;
+  font-family: 'Bungee Shade', cursiva 'Orbitron', sans-serif;
+  font-size: 15px;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #24303c;
+  color: white;
+  border-radius: 10px;
+  justify-self: center;
+}
+
+/* PAGINA COMPRAS */
+.titulo {
+  font-family: 'Bungee Shade', cursiva 'Orbitron', sans-serif;
+  color: #24303c;
+  text-transform: uppercase;
+  font-size: 40px;
+  border: 4px solid #24303c;
+  border-radius: 15px;
+  text-align: center;
+  width: 35%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+}
+
+.comprar {
+  width: 40%;
+  height: 70%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 20px;
+  margin-bottom: 10%;
+  display: grid;
+  grid-template-columns: 22% 22% 20%;
+  grid-template-rows: 60px 60px 60px 60px 60px;
+  grid-template-areas: "c1 c1 c2" "c1 c1 c3" "c1 c1 c3" "c1 c1 c3" "c4 c5 c5";
+  border: #b4c0cd solid 4px;
+  border-radius: 10px;
+  justify-content: space-evenly;
+}
+
+.compra__imagen {
+  grid-area: c1;
+  width: 100%;
+  height: 100%;
+  margin: 5px;
+}
+
+.compra__producto {
+  grid-area: c2;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-family: 'Bungee Shade', cursiva 'Orbitron', sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #f80f0f;
+  justify-self: center;
+}
+
+.compra__detalle {
+  grid-area: c3;
+  font-family: 'Bungee Shade', cursiva 'Orbitron', sans-serif;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #24303c;
+  justify-self: center;
+}
+
+.compra__precio {
+  grid-area: c5;
+  font-size: 30px;
+  font-family: 'Bungee Shade', cursiva 'Orbitron', sans-serif;
+  color: #24303c;
+  justify-self: start;
+  transform: translateY(10px);
+}
+
+.compra__pagar {
+  grid-area: c4;
+  height: 35px;
+  width: 90px;
+  font-family: 'Bungee Shade', cursiva 'Orbitron', sans-serif;
+  font-size: 15px;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #24303c;
+  color: white;
+  border-radius: 8px;
+  margin-left: 50%;
+  transform: translateY(15px);
+}
+
+/* PAGINA PROMOCIONES  */
+.promocion {
+  font-family: 'Bungee Shade', cursiva 'Orbitron', sans-serif;
+  color: #24303c;
+  text-transform: uppercase;
+  font-size: 40px;
+  border: 4px solid #24303c;
+  border-radius: 15px;
+  text-align: center;
+  width: 45%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  margin-bottom: 30px;
+}
+
+.promo {
+  width: 60%;
+  height: 40%;
+  margin-bottom: 5%;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: 25% 25% 25%;
+  grid-template-rows: 80px 80px 80px 80px 80px;
+  grid-template-areas: "c1 c1 c2" "c1 c1 c3" "c1 c1 c3" "c1 c1 c3" "c4 c5 c5";
+  border: #b4c0cd solid 4px;
+  border-radius: 10px;
+  justify-content: space-evenly;
+}
+
+.promo__imagen {
+  grid-area: c1;
+  width: 100%;
+  height: 100%;
+  margin: 5PX;
+}
+
+.promo__producto {
+  grid-area: c2;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-family: 'Bungee Shade', cursiva 'Orbitron', sans-serif;
+  font-size: 30px;
+  text-transform: uppercase;
+  color: #0a7b06;
+  justify-self: center;
+}
+
+.promo__detalle {
+  grid-area: c3;
+  font-size: 18px;
+  font-family: 'Bungee Shade', cursiva 'Orbitron', sans-serif;
+  text-transform: uppercase;
+  color: #24303c;
+  justify-self: center;
+}
+
+.promo__precio {
+  grid-area: c5;
+  font-size: 30px;
+  font-family: 'Bungee Shade', cursiva 'Orbitron', sans-serif;
+  color: #24303c;
+  justify-self: start;
+  transform: translateY(25PX);
+}
+
+.promo__pagar {
+  grid-area: c4;
+  height: 35px;
+  width: 90px;
+  font-family: 'Bungee Shade', cursiva 'Orbitron', sans-serif;
+  font-size: 15px;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #24303c;
+  color: white;
+  border-radius: 10px;
+  margin-left: 50%;
+  transform: translateY(25PX);
+}
+
+.promo2 {
+  width: 60%;
+  height: 40%;
+  margin-bottom: 5%;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: 25% 25% 25%;
+  grid-template-rows: 80px 80px 80px 80px 80px;
+  grid-template-areas: "c1 c1 c2" "c1 c1 c3" "c1 c1 c3" "c1 c1 c3" "c4 c5 c5";
+  border: #b4c0cd solid 4px;
+  border-radius: 10px;
+  justify-content: space-evenly;
+}
+
+/* responsive mobile  */
+@media screen and (max-width: 1024px) {
+  .buscados {
+    font-family: 'Bungee Shade', cursiva 'Orbitron', sans-serif;
+    color: #24303c;
+    text-transform: uppercase;
+    font-size: 20px;
+    border: 2px solid #24303c;
+    text-align: center;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .articulos {
+    width: 99%;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+    grid-template-rows: 60px 60px 60px 60px 60px 60px 60px 60px;
+    grid-template-areas: " ele1 ele1 ele2 ele6 ele6 ele7 ele11 ele11 ele12" " ele1 ele1 ele2  ele6 ele6 ele7 ele11 ele11 ele12" " ele3 ele4 ele5  ele8 ele9 ele10 ele13 ele14 ele15";
+    border: #b4c0cd solid 0.5px;
+    justify-items: center;
+  }
+  .articulos__imagen1 {
+    grid-area: ele1;
+    height: 90%;
+    width: 170px;
+    overflow: hidden;
+  }
+  .articulos__imagen1:hover {
+    transform: scale(1.05);
+  }
+  .articulos__texto1 {
+    grid-area: ele2;
+    font-family: 'Bungee Shade', cursiva 'Orbitron', sans-serif;
+    font-size: 10px;
+    text-transform: uppercase;
+    color: #24303c;
+    justify-self: center;
+    transform: translatex(5px);
+    transform: translatey(5px);
+  }
+  .articulos__comprar1 {
+    grid-area: ele3;
+    margin-left: 25px;
+    height: 35px;
+    width: 65px;
+    font-family: 'Bungee Shade', cursiva 'Orbitron', sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: #24303c;
+    color: white;
+    border-radius: 10px;
+  }
+  .articulos__cantidad1 {
+    grid-area: ele4;
+    font-family: 'Bungee Shade', cursiva 'Orbitron', sans-serif;
+    font-size: 15px;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: #24303c;
+    color: white;
+    height: 34px;
+    width: 50px;
+    border-radius: 8px;
+    transform: translatex(30px);
+  }
+  .articulos__precios1 {
+    grid-area: ele5;
+    font-size: 20px;
+    font-family: 'Bungee Shade', cursiva 'Orbitron', sans-serif;
+    color: #24303c;
+    font-weight: bolder;
+    transform: translateX(5px);
+  }
+  .articulos__imagen2 {
+    grid-area: ele6;
+    height: 90%;
+    width: 170px;
+    overflow: hidden;
+  }
+  .articulos__imagen2:hover {
+    transform: scale(1.05);
+  }
+  .articulos__imagen3 {
+    grid-area: ele11;
+    height: 90%;
+    width: 170px;
+    overflow: hidden;
+  }
+  .articulos__imagen3:hover {
+    transform: scale(1.05);
+  }
+  .articulos__texto2 {
+    grid-area: ele7;
+    font-family: 'Bungee Shade', cursiva 'Orbitron', sans-serif;
+    font-size: 10px;
+    text-transform: uppercase;
+    color: #24303c;
+    justify-self: center;
+    transform: translatex(5px);
+    transform: translatey(5px);
+  }
+  .articulos__texto3 {
+    grid-area: ele12;
+    font-family: 'Bungee Shade', cursiva 'Orbitron', sans-serif;
+    font-size: 10px;
+    text-transform: uppercase;
+    color: #24303c;
+    justify-self: center;
+    transform: translatex(5px);
+    transform: translatey(5px);
+  }
+  .articulos__comprar2 {
+    grid-area: ele8;
+    margin-left: 25px;
+    height: 35px;
+    width: 65px;
+    font-family: 'Bungee Shade', cursiva 'Orbitron', sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: #24303c;
+    color: white;
+    border-radius: 10px;
+  }
+  .articulos__comprar3 {
+    grid-area: ele13;
+    grid-area: ele3;
+    margin-left: 25px;
+    height: 35px;
+    width: 65px;
+    font-family: 'Bungee Shade', cursiva 'Orbitron', sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: #24303c;
+    color: white;
+    border-radius: 10px;
+  }
+  .articulos__cantidad2 {
+    grid-area: ele9;
+    font-family: 'Bungee Shade', cursiva 'Orbitron', sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: #24303c;
+    color: white;
+    height: 34px;
+    width: 50px;
+    border-radius: 8px;
+    transform: translatex(20px);
+  }
+  .articulos__cantidad3 {
+    grid-area: ele14;
+    font-family: 'Bungee Shade', cursiva 'Orbitron', sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: #24303c;
+    color: white;
+    height: 34px;
+    width: 50px;
+    border-radius: 8px;
+    transform: translatex(20px);
+  }
+  .articulos__precios2 {
+    grid-area: ele10;
+    font-size: 20px;
+    font-family: 'Bungee Shade', cursiva 'Orbitron', sans-serif;
+    color: #24303c;
+    font-weight: bolder;
+  }
+  .articulos__precios3 {
+    grid-area: ele15;
+    font-size: 20px;
+    font-family: 'Bungee Shade', cursiva 'Orbitron', sans-serif;
+    color: #24303c;
+    font-weight: bolder;
+  }
+  .footer1 {
+    width: 100%;
+    height: 70px;
+    background-color: #24303c;
+    display: grid;
+    grid-template-columns: 35% 16% 16% 16% 15%;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer1__imagen {
+    display: none;
+    width: 120px;
+    height: 50px;
+    margin-left: 40px;
+  }
+  .footer1__redes {
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Bungee Shade', cursiva 'Orbitron', sans-serif;
+    color: black;
+    font-size: 15px;
+    margin-bottom: 0;
+    font-weight: bolder;
+  }
+  /*  RESPONSIVE PAGINA COMPRAS  */
+  .titulo {
+    font-family: 'Bungee Shade', cursiva 'Orbitron', sans-serif;
+    color: #24303c;
+    text-transform: uppercase;
+    font-size: 25px;
+    border: 4px solid #24303c;
+    border-radius: 15px;
+    text-align: center;
+    width: 35%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+  }
+  .comprar {
+    width: 40%;
+    height: 30%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px;
+    margin-bottom: 10%;
+    display: grid;
+    grid-template-columns: 22% 22% 20%;
+    grid-template-rows: 60px 60px 60px 60px 60px;
+    grid-template-areas: "c1 c1 c2" "c1 c1 c3" "c1 c1 c3" "c1 c1 c3" "c4 c5 c5";
+    border: #b4c0cd solid 4px;
+    border-radius: 10px;
+    justify-content: space-evenly;
+  }
+  .compra__imagen {
+    grid-area: c1;
+    width: 100%;
+    height: 100%;
+  }
+  .compra__producto {
+    grid-area: c2;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-family: 'Bungee Shade', cursiva 'Orbitron', sans-serif;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #f80f0f;
+    justify-self: center;
+  }
+  .compra__detalle {
+    grid-area: c3;
+    font-family: 'Bungee Shade', cursiva 'Orbitron', sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #24303c;
+    justify-self: center;
+    transform: translatex(10px);
+  }
+  .compra__precio {
+    grid-area: c5;
+    font-size: 25px;
+    font-family: 'Bungee Shade', cursiva 'Orbitron', sans-serif;
+    color: #24303c;
+    justify-self: center;
+    transform: translatey(20px) translatex(30px);
+  }
+  .compra__pagar {
+    grid-area: c4;
+    height: 35px;
+    width: 85px;
+    font-family: 'Bungee Shade', cursiva 'Orbitron', sans-serif;
+    font-size: 15px;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: #24303c;
+    color: white;
+    border-radius: 10px;
+    margin-left: 50%;
+  }
+  /* responsive pagina promociones 1024px */
+  .promocion {
+    font-family: 'Bungee Shade', cursiva 'Orbitron', sans-serif;
+    color: #24303c;
+    text-transform: uppercase;
+    font-size: 30px;
+    border: 4px solid #24303c;
+    border-radius: 15px;
+    text-align: center;
+    width: 45%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    margin-bottom: 30px;
+  }
+  .promo {
+    width: 50%;
+    height: 35%;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 80px 80px 80px 80px 80px;
+    grid-template-areas: "c1 c1 c2" "c1 c1 c3" "c1 c1 c3" "c1 c1 c3" "c4 c5 c5";
+    border: #b4c0cd solid 4px;
+    border-radius: 10px;
+    justify-content: space-evenly;
+  }
+  .promo2 {
+    width: 50%;
+    height: 35%;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 80px 80px 80px 80px 80px;
+    grid-template-areas: "c1 c1 c2" "c1 c1 c3" "c1 c1 c3" "c1 c1 c3" "c4 c5 c5";
+    border: #b4c0cd solid 4px;
+    border-radius: 10px;
+    justify-content: space-evenly;
+  }
+  .promo__imagen {
+    grid-area: c1;
+    width: 90%;
+    height: 90%;
+    margin: 5PX;
+  }
+  .promo__producto {
+    grid-area: c2;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-family: 'Bungee Shade', cursiva 'Orbitron', sans-serif;
+    font-size: 25px;
+    text-transform: uppercase;
+    color: #0a7b06;
+    justify-self: center;
+  }
+  .promo__detalle {
+    grid-area: c3;
+    font-size: 15px;
+    font-family: 'Bungee Shade', cursiva 'Orbitron', sans-serif;
+    text-transform: uppercase;
+    color: #24303c;
+    justify-self: center;
+  }
+  .promo__precio {
+    grid-area: c5;
+    font-size: 25px;
+    font-family: 'Bungee Shade', cursiva 'Orbitron', sans-serif;
+    color: #24303c;
+    justify-self: start;
+    transform: translateX(85PX);
+  }
+  .promo__pagar {
+    grid-area: c4;
+    height: 35px;
+    width: 90px;
+    font-family: 'Bungee Shade', cursiva 'Orbitron', sans-serif;
+    font-size: 15px;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: #24303c;
+    color: white;
+    border-radius: 10px;
+    margin-left: 50%;
+    transform: translateY(-3px);
+  }
+  /* mediaquery PAGINA PRODUCTOS 1024px */
+  .producto {
+    width: 95%;
+    height: 10%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: 16% 16% 16% 16% 16% 16%;
+    grid-template-rows: 45px 45px 45px 45px 45px 45px 45px;
+    grid-template-areas: "ele1 ele1 ele7 ele7 ele12 ele12" "ele1 ele1 ele7 ele7 ele12 ele12" "ele1 ele1 ele7 ele7 ele12 ele12" "ele1 ele1 ele7 ele7 ele12 ele12" "ele2 ele2 ele8 ele8 ele13 ele13" "ele3 ele4 ele9 ele10 ele14 ele15" "ele5 ele5 ele11 ele11 ele16 ele16";
+    border: #b4c0cd solid 0.5px;
+    justify-content: center;
+    align-items: center;
+  }
+  .producto__imagen1 {
+    grid-area: ele1;
+    height: 90%;
+    width: 90%;
+    transform: translateY(5px);
+    transform: translatex(8px);
+  }
+  .producto__texto1 {
+    grid-area: ele2;
+    font-family: 'Bungee Shade', cursiva 'Orbitron', sans-serif;
+    font-size: 17px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    color: #24303c;
+    justify-self: center;
+  }
+  .producto__cantidad1 {
+    grid-area: ele3;
+    font-family: 'Bungee Shade', cursiva 'Orbitron', sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: #24303c;
+    color: white;
+    height: 35px;
+    width: 60px;
+    border-radius: 8px;
+    justify-self: center;
+    transform: translateX(10px);
+  }
+  .producto__precio1 {
+    grid-area: ele4;
+    font-size: 25px;
+    font-family: 'Bungee Shade', cursiva 'Orbitron', sans-serif;
+    color: #24303c;
+    justify-self: start;
+  }
+  .producto__comprar1 {
+    grid-area: ele5;
+    height: 35px;
+    width: 90px;
+    font-family: 'Bungee Shade', cursiva 'Orbitron', sans-serif;
+    font-size: 15px;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: #24303c;
+    color: white;
+    border-radius: 10px;
+    justify-self: center;
+  }
+  /* bloque centro  */
+  .producto__imagen2 {
+    grid-area: ele7;
+    height: 90%;
+    width: 90%;
+    transform: translateY(5px);
+    transform: translatex(8px);
+  }
+  .producto__texto2 {
+    grid-area: ele8;
+    font-family: 'Bungee Shade', cursiva 'Orbitron', sans-serif;
+    font-size: 17px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    color: #24303c;
+    justify-self: center;
+  }
+  .producto__cantidad2 {
+    grid-area: ele9;
+    font-family: 'Bungee Shade', cursiva 'Orbitron', sans-serif;
+    font-size: 10px;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: #24303c;
+    color: white;
+    height: 35px;
+    width: 60px;
+    border-radius: 8px;
+    justify-self: center;
+    transform: translateX(10px);
+  }
+  .producto__precio2 {
+    grid-area: ele10;
+    font-size: 25px;
+    font-family: 'Bungee Shade', cursiva 'Orbitron', sans-serif;
+    color: #24303c;
+    justify-self: start;
+  }
+  .producto__comprar2 {
+    grid-area: ele11;
+    height: 35px;
+    width: 90px;
+    font-family: 'Bungee Shade', cursiva 'Orbitron', sans-serif;
+    font-size: 15px;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: #24303c;
+    color: white;
+    border-radius: 10px;
+    justify-self: center;
+  }
+  /* bloque izquierda */
+  .producto__imagen3 {
+    grid-area: ele12;
+    height: 90%;
+    width: 90%;
+    transform: translateY(5px);
+    transform: translatex(8px);
+  }
+  .producto__texto3 {
+    grid-area: ele13;
+    font-family: 'Bungee Shade', cursiva 'Orbitron', sans-serif;
+    font-size: 17px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    color: #24303c;
+    justify-self: center;
+  }
+  .producto__cantidad3 {
+    grid-area: ele14;
+    font-family: 'Bungee Shade', cursiva 'Orbitron', sans-serif;
+    font-size: 10px;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: #24303c;
+    color: white;
+    height: 35px;
+    width: 60px;
+    border-radius: 8px;
+    justify-self: center;
+    transform: translateX(10px);
+  }
+  .producto__precio3 {
+    grid-area: ele15;
+    font-size: 25px;
+    font-family: 'Bungee Shade', cursiva 'Orbitron', sans-serif;
+    justify-self: start;
+  }
+  .producto__comprar3 {
+    grid-area: ele16;
+    height: 35px;
+    width: 90px;
+    font-family: 'Bungee Shade', cursiva 'Orbitron', sans-serif;
+    font-size: 15px;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: #24303c;
+    color: white;
+    border-radius: 10px;
+    justify-self: center;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .buscados {
+    font-family: 'Bungee Shade', cursiva 'Orbitron', sans-serif;
+    color: #24303c;
+    text-transform: uppercase;
+    font-size: 20px;
+    border: 2px solid #24303c;
+    text-align: center;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bolder;
+  }
+  .articulos {
+    margin: 20px;
+    width: 96%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 75px 75px 75px 75px 75px 75px 75px 75px;
+    grid-template-areas: "ele1 ele1 ele2 " "ele1 ele1 ele2 "  "ele3 ele4 ele5" "ele6 ele6 ele7"  "ele6 ele6 ele7"     "ele8 ele9 ele10" "ele11 ele11 ele12" "ele11 ele11 ele12"  "ele13 ele14 ele15";
+    border: #b4c0cd solid 0.5px;
+    justify-items: center;
+  }
+  .articulos__imagen1 {
+    grid-area: ele1;
+    height: 90%;
+    width: 220px;
+    transform: scaleX(0.9);
+    transition: transform 2s;
+  }
+  .articulos__imagen1:hover {
+    transform: scale(1.1);
+  }
+  .articulos__texto1 {
+    grid-area: ele2;
+    font-family: 'Bungee Shade', cursiva 'Orbitron', sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    color: #24303c;
+    justify-self: center;
+    transform: translateX(-5px);
+  }
+  .articulos__comprar1 {
+    grid-area: ele3;
+    margin-left: 25px;
+    height: 40px;
+    width: 75px;
+    font-family: 'Bungee Shade', cursiva 'Orbitron', sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: #24303c;
+    color: white;
+    border-radius: 10px;
+    transform: translateY(-10px);
+    transition: transform 2s;
+  }
+  .articulos__comprar1:hover {
+    transform: scale(1.3);
+  }
+  .articulos__cantidad1 {
+    grid-area: ele4;
+    font-family: 'Bungee Shade', cursiva 'Orbitron', sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: #24303c;
+    color: white;
+    height: 40px;
+    width: 55px;
+    border-radius: 8px;
+    transform: translateY(-10px);
+  }
+  .articulos__precios1 {
+    grid-area: ele5;
+    font-size: 22px;
+    font-family: 'Bungee Shade', cursiva 'Orbitron', sans-serif;
+    color: #24303c;
+    font-weight: bolder;
+    transform: translatex(-20px);
+  }
+  .articulos__imagen2 {
+    grid-area: ele6;
+    height: 90%;
+    width: 220px;
+    transition: transform 1s;
+    overflow: hidden;
+  }
+  .articulos__comprar2:hover {
+    transform: scale(1.05);
+  }
+  .articulos__imagen3 {
+    grid-area: ele11;
+    height: 90%;
+    width: 220px;
+    transition: transform 2s;
+    overflow: hidden;
+  }
+  .articulos__comprar3:hover {
+    transform: scale(1.05);
+  }
+  .articulos__texto2 {
+    grid-area: ele7;
+    font-family: 'Bungee Shade', cursiva 'Orbitron', sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    color: #24303c;
+    transform: translateX(-5px);
+  }
+  .articulos__texto3 {
+    grid-area: ele12;
+    font-family: 'Bungee Shade', cursiva 'Orbitron', sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    color: #24303c;
+    transform: translateX(-5px);
+  }
+  .articulos__comprar2 {
+    grid-area: ele8;
+    grid-area: ele3;
+    margin-left: 25px;
+    height: 40px;
+    width: 75px;
+    font-family: 'Bungee Shade', cursiva 'Orbitron', sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: #24303c;
+    color: white;
+    border-radius: 10px;
+    transform: translateY(-5px);
+    transition: transform 1s;
+  }
+  .articulos__comprar3:hover {
+    transform: scale(1.3);
+  }
+  .articulos__comprar3 {
+    grid-area: ele13;
+    grid-area: ele3;
+    margin-left: 25px;
+    height: 40px;
+    width: 75px;
+    font-family: 'Bungee Shade', cursiva 'Orbitron', sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: #24303c;
+    color: white;
+    border-radius: 10px;
+    transform: translateY(-5px);
+    transition: transform 1s;
+  }
+  .articulos__comprar3:hover {
+    transform: scale(1.1);
+  }
+  .articulos__cantidad2 {
+    grid-area: ele9;
+    font-family: 'Bungee Shade', cursiva 'Orbitron', sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: #24303c;
+    color: white;
+    height: 40px;
+    width: 55px;
+    border-radius: 8px;
+    transform: translateY(-5px);
+  }
+  .articulos__cantidad3 {
+    grid-area: ele14;
+    font-family: 'Bungee Shade', cursiva 'Orbitron', sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: #24303c;
+    color: white;
+    height: 40px;
+    width: 55px;
+    border-radius: 8px;
+    transform: translateY(-5px);
+  }
+  .articulos__precios2 {
+    grid-area: ele10;
+    font-size: 20px;
+    font-family: 'Bungee Shade', cursiva 'Orbitron', sans-serif;
+    color: #24303c;
+    font-weight: bolder;
+    transform: translatex(-20px);
+  }
+  .articulos__precios3 {
+    grid-area: ele15;
+    font-size: 20px;
+    font-family: 'Bungee Shade', cursiva 'Orbitron', sans-serif;
+    color: #24303c;
+    font-weight: bolder;
+    transform: translatex(-20px);
+  }
+  .footer1 {
+    width: 100%;
+    height: 50px;
+    background-color: #24303c;
+    display: grid;
+    grid-template-columns: 35% 16% 16% 16% 15%;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer1__imagen {
+    display: none;
+    width: 120px;
+    height: 50px;
+    margin-left: 40px;
+  }
+  .footer1__redes {
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Bungee Shade', cursiva 'Orbitron', sans-serif;
+    color: black;
+    font-size: 8px;
+    margin-bottom: 0;
+  }
+  .titulo {
+    font-family: 'Bungee Shade', cursiva 'Orbitron', sans-serif;
+    color: #24303c;
+    text-transform: uppercase;
+    font-size: 15px;
+    border: 2px solid #24303c;
+    border-radius: 15px;
+    text-align: center;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    font-weight: bolder;
+  }
+  .comprar {
+    width: 65%;
+    height: 35%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px;
+    margin-bottom: 50%;
+    display: grid;
+    grid-template-columns: 25% 25% 25%;
+    grid-template-rows: 55px 55px 55px 55px 55px;
+    grid-template-areas: "c1 c1 c2" "c1 c1 c3" "c1 c1 c3" "c1 c1 c3" "c4 c5 c5";
+    border: #b4c0cd solid 4px;
+    border-radius: 10px;
+    justify-content: space-evenly;
+  }
+  .compra__imagen {
+    grid-area: c1;
+    width: 100%;
+    height: 90%;
+    overflow: hidden;
+    transform: translateX(-10px);
+    transform: translateY(-10);
+    transition: transform 1s;
+  }
+  .compra__imagen :hover {
+    transform: scaleY(1.1);
+  }
+  .compra__producto {
+    grid-area: c2;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-family: 'Bungee Shade', cursiva 'Orbitron', sans-serif;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #f80f0f;
+    justify-self: center;
+  }
+  .compra__detalle {
+    grid-area: c3;
+    font-family: 'Bungee Shade', cursiva 'Orbitron', sans-serif;
+    font-size: 10px;
+    text-transform: uppercase;
+    color: #24303c;
+    justify-self: center;
+    transform: translateY(-5px);
+  }
+  .compra__precio {
+    grid-area: c5;
+    font-size: 18px;
+    font-family: 'Bungee Shade', cursiva 'Orbitron', sans-serif;
+    color: #24303c;
+    justify-self: center;
+    font-weight: bolder;
+    transform: translatex(25px);
+  }
+  .compra__pagar {
+    grid-area: c4;
+    height: 38px;
+    width: 80px;
+    font-family: 'Bungee Shade', cursiva 'Orbitron', sans-serif;
+    font-size: 10px;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: #24303c;
+    color: white;
+    border-radius: 10px;
+    margin-left: 50%;
+    transform: translateY(-10px);
+    transform: translatex(-10px);
+    transition: transform 2s;
+  }
+  .compra__pagar:hover {
+    transform: scale(1.2);
+  }
+  /* PAGINA REGISTRO */
+  .formulario {
+    width: 300px;
+    padding: 20px;
+    margin: auto;
+    margin-bottom: 10%;
+    background-color: #24303c;
+    border-radius: 8px;
+    font-family: 'Bungee Shade', cursiva 'Orbitron', sans-serif;
+    margin-top: 100px;
+  }
+  /* TITULO FORMULARIO  */
+  .formulario__titulo {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-size: 15px;
+    text-align: center;
+    color: white;
+  }
+  /* CAMPOS DEL FORMULARIO  */
+  .formulario__campos {
+    width: 100%;
+    background: #24303c;
+    color: white;
+    padding: 8px;
+    font-family: 'Bungee Shade', cursiva 'Orbitron', sans-serif;
+    border-bottom: 20px;
+    border-radius: 10px;
+    border: 3px solid #1f03b8;
+    text-transform: uppercase;
+    margin: 5px;
+  }
+  /* BOTON REGISTRO FORMULARIO  */
+  .formulario__boton {
+    display: block;
+    width: 50%;
+    margin: 15px;
+    height: 30px;
+    border-radius: 4px;
+    font-size: 15px;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .formulario__texto {
+    text-decoration: none;
+    color: white;
+    margin: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Bungee Shade', cursiva 'Orbitron', sans-serif;
+  }
+  .promocion {
+    font-family: 'Bungee Shade', cursiva 'Orbitron', sans-serif;
+    color: #24303c;
+    text-transform: uppercase;
+    font-size: 20px;
+    border: 4px solid #24303c;
+    border-radius: 15px;
+    text-align: center;
+    width: 90%;
+    height: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    margin-bottom: 10px;
+  }
+  .promo {
+    width: 95%;
+    height: 30%;
+    margin-bottom: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 25% 25% 25%;
+    grid-template-rows: 80px 80px 80px 80px 80px;
+    grid-template-areas: "c1 c1 c2" "c1 c1 c3" "c1 c1 c3" "c1 c1 c3" "c4 c5 c5";
+    border: #b4c0cd solid 4px;
+    border-radius: 10px;
+    justify-content: space-evenly;
+  }
+  .promo2 {
+    width: 95%;
+    height: 30%;
+    margin-bottom: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 25% 25% 25%;
+    grid-template-rows: 80px 80px 80px 80px 80px;
+    grid-template-areas: "c1 c1 c2" "c1 c1 c3" "c1 c1 c3" "c1 c1 c3" "c4 c5 c5";
+    border: #b4c0cd solid 4px;
+    border-radius: 10px;
+    justify-content: space-evenly;
+  }
+  .promo__imagen {
+    grid-area: c1;
+    width: 90%;
+    height: 80%;
+    margin: 5PX;
+    transform: translateY(20px);
+  }
+  .promo__producto {
+    grid-area: c2;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-family: 'Bungee Shade', cursiva 'Orbitron', sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #0a7b06;
+    justify-self: center;
+  }
+  .promo__detalle {
+    grid-area: c3;
+    font-size: 13px;
+    font-family: 'Bungee Shade', cursiva 'Orbitron', sans-serif;
+    text-transform: uppercase;
+    color: #24303c;
+    justify-self: center;
+  }
+  .promo__precio {
+    grid-area: c5;
+    font-size: 25px;
+    font-family: 'Bungee Shade', cursiva 'Orbitron', sans-serif;
+    color: #24303c;
+    justify-self: start;
+    transform: translateX(85PX);
+  }
+  .promo__pagar {
+    grid-area: c4;
+    width: 90px;
+    height: 40px;
+    font-family: 'Bungee Shade', cursiva 'Orbitron', sans-serif;
+    font-size: 15px;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: #24303c;
+    color: white;
+    border-radius: 10px;
+    margin-left: 50%;
+    transform: translateY(-3px);
+  }
+  /* mediaquery PAGINA PRODUCTOS 650px */
+  /* mediaquery PAGINA PRODUCTOS 1024px */
+  .producto {
+    width: 95%;
+    height: 85%;
+    display: grid;
+    grid-template-columns: 35% 35% 20%;
+    grid-template-rows: 80px 80px 80px 80px 80px 80px 80px 80px;
+    grid-template-areas: "ele1 ele1 ele3 " "ele1 ele1 ele4 "  "ele2 ele2 ele5" "ele6 ele6 ele8"  "ele6 ele6 ele9"     "ele7 ele7 ele10" "ele11 ele11 ele13" "ele11 ele11 ele14"  "ele12 ele12 ele15";
+    border: #b4c0cd solid 0.5px;
+    justify-content: center;
+    align-items: center;
+  }
+  .producto__imagen1 {
+    grid-area: ele1;
+    height: 100%;
+    width: 90%;
+  }
+  .producto__texto1 {
+    grid-area: ele2;
+    font-family: 'Bungee Shade', cursiva 'Orbitron', sans-serif;
+    font-size: 17px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    color: #24303c;
+    justify-self: center;
+  }
+  .producto__cantidad1 {
+    grid-area: ele3;
+    font-family: 'Bungee Shade', cursiva 'Orbitron', sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: #24303c;
+    color: white;
+    height: 35px;
+    width: 60px;
+    border-radius: 8px;
+    justify-self: center;
+    transform: translatey(35px);
+  }
+  .producto__precio1 {
+    grid-area: ele4;
+    font-size: 22px;
+    font-family: 'Bungee Shade', cursiva 'Orbitron', sans-serif;
+    color: #24303c;
+  }
+  .producto__comprar1 {
+    grid-area: ele5;
+    height: 35px;
+    width: 90px;
+    font-family: 'Bungee Shade', cursiva 'Orbitron', sans-serif;
+    font-size: 15px;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: #24303c;
+    color: white;
+    border-radius: 10px;
+  }
+  /* bloque centro  */
+  .producto__imagen2 {
+    grid-area: ele6;
+    height: 100%;
+    width: 90%;
+  }
+  .producto__texto2 {
+    grid-area: ele7;
+    font-family: 'Bungee Shade', cursiva 'Orbitron', sans-serif;
+    font-size: 17px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    color: #24303c;
+    justify-self: center;
+  }
+  .producto__cantidad2 {
+    grid-area: ele8;
+    font-family: 'Bungee Shade', cursiva 'Orbitron', sans-serif;
+    font-size: 10px;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: #24303c;
+    color: white;
+    height: 35px;
+    width: 60px;
+    border-radius: 8px;
+    justify-self: center;
+    transform: translatey(35px);
+  }
+  .producto__precio2 {
+    grid-area: ele9;
+    font-size: 22px;
+    font-family: 'Bungee Shade', cursiva 'Orbitron', sans-serif;
+    color: #24303c;
+  }
+  .producto__comprar2 {
+    grid-area: ele10;
+    height: 35px;
+    width: 90px;
+    font-family: 'Bungee Shade', cursiva 'Orbitron', sans-serif;
+    font-size: 15px;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: #24303c;
+    color: white;
+    border-radius: 10px;
+    justify-self: center;
+  }
+  /* bloque izquierda */
+  .producto__imagen3 {
+    grid-area: ele11;
+    height: 100%;
+    width: 90%;
+  }
+  .producto__texto3 {
+    grid-area: ele12;
+    font-family: 'Bungee Shade', cursiva 'Orbitron', sans-serif;
+    font-size: 17px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    color: #24303c;
+    justify-self: center;
+  }
+  .producto__cantidad3 {
+    grid-area: ele13;
+    font-family: 'Bungee Shade', cursiva 'Orbitron', sans-serif;
+    font-size: 10px;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: #24303c;
+    color: white;
+    height: 35px;
+    width: 60px;
+    border-radius: 8px;
+    transform: translatey(35px);
+  }
+  .producto__precio3 {
+    grid-area: ele14;
+    font-size: 22px;
+    font-family: 'Bungee Shade', cursiva 'Orbitron', sans-serif;
+  }
+  .producto__comprar3 {
+    grid-area: ele15;
+    height: 35px;
+    width: 90px;
+    font-family: 'Bungee Shade', cursiva 'Orbitron', sans-serif;
+    font-size: 15px;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: #24303c;
+    color: white;
+    border-radius: 10px;
+    justify-self: center;
+  }
+}
+/*# sourceMappingURL=style.css.map */
