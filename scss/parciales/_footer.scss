@@ -3,27 +3,29 @@
 
     width: 100%;
     height: 80px;
-    background-color: #24303c;
+    background-color: $color-primario;
     display: grid;
     grid-template-columns: 35% 16% 16% 16% 15% ; 
     align-items: center;
     justify-content:center ;
     bottom: 0px;
+
+    &__imagen{
+
+        width: 150px;
+        height: 60px;
+        margin-left: 40px;
+    }
+
+    &__redes{
+
+        text-decoration: none;
+        text-transform: $transformacion-fuente;
+        text-align: center;
+        font-family: $fuente-principal;
+        color: black;
+        font-size: 18px; 
+        font-weight: $estilo-fuente;
+    }
 }
 
-.footer1__imagen{
-
-    width: 150px;
-    height: 60px;
-    margin-left: 40px;
-}
-
-.footer1__redes{
-
-    text-decoration: none;
-    text-transform: uppercase;
-    text-align: center;
-    font-family: 'Bungee Shade', cursiva 'Orbitron', sans-serif;
-    color: black;
-    font-size: 18px; 
-}

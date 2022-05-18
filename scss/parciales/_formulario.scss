@@ -4,44 +4,41 @@
     padding: 30px;
     margin: auto;
     margin-bottom: 10%;
-    background-color: #24303c;
+    background-color: $color-primario;
     border-radius: 8px;
-    font-family: 'Bungee Shade', cursiva 'Orbitron', sans-serif;
+    font-family: $fuente-principal;
     margin-top: 100px;
-}
-
-/* TITULO FORMULARIO  */
 
 
-.formulario__titulo{
 
-    margin-top: 5%;
-    margin-bottom: 5%;
-    font-size: 20px;
-    text-align: center; 
-    color: white;
-}
+    &__titulo{
 
-/* CAMPOS DEL FORMULARIO  */
+        margin-top: 5%;
+        margin-bottom: 5%;
+        font-size: 20px;
+        text-align: center; 
+        color: white;
+    }
 
-.formulario__campos{
+
+    &__campos{
 
     
-    width: 100%;
-    background: #24303c;
-    color: white;
-    padding: 10px;
-    font-family: 'Bungee Shade', cursiva 'Orbitron', sans-serif;
-    border-bottom: 20px;
-    border-radius: 10px;
-    border: 3px solid rgb(31, 3, 184);
-    text-transform: uppercase;
-    margin: 10px;
-}
+        width: 100%;
+        background: #24303c;
+        color: white;
+        padding: 10px;
+        font-family: $fuente-principal;
+        border-bottom: 20px;
+        border-radius: 10px;
+        border: 3px solid rgb(31, 3, 184);
+        text-transform: $transformacion-fuente;
+        margin: 10px;
+    }
 
-/* BOTON REGISTRO FORMULARIO  */
 
-.formulario__boton{
+
+    &__boton{
 
     display: block;
     width: 50%;
@@ -53,15 +50,17 @@
     margin-left: auto;
     margin-right: auto;
 
+    }
+
+    &__texto{
+
+        text-decoration: none;
+        color: white;
+        margin: 10px;
+        text-align: center;
+        text-decoration: none;
+        font-family: $fuente-principal;
+
+    }  
 }
 
-.formulario__texto{
-
-    text-decoration: none;
-    color: white;
-    margin: 10px;
-    text-align: center;
-    text-decoration: none;
-    font-family: 'Bungee Shade', cursiva 'Orbitron', sans-serif;
-
-}  
