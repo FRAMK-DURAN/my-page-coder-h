@@ -294,29 +294,29 @@
         font-family: $fuente-principal;
         color: $color-primario;
         text-transform: $transformacion-fuente;
-        font-size: 25px;
+        font-size: 35px;
         border: 4px solid $color-primario;
         border-radius: 15px;
         text-align: center; 
-        width: 35%;
+        width: 65%;
         margin-left: auto;
         margin-right: auto; 
         margin-top: 5%;
     }
 
 
-    .comprar{
+    .compra{
 
-    width: 40%;
-    height: 30%;
+    width: 60%;
+    height: 55%;
     margin-right: auto;
     margin-left: auto;
     margin-top: 20px;
     margin-bottom: 10%;
     display: grid;
-    grid-template-columns: 22% 22% 20% ;
+    grid-template-columns: 25% 25% 25% ;
 
-    grid-template-rows: 60px 60px 60px 60px 60px;
+    grid-template-rows: 75px 75px 75px 75px 75px;
 
     grid-template-areas:"c1 c1 c2"
                         "c1 c1 c3"
@@ -333,8 +333,8 @@
 
         
     grid-area: c1;
-    width: 100%;
-    height: 100%;
+    width: 95%;
+    height: 90%;
     }  
 
     .compra__producto{
@@ -343,9 +343,9 @@
         margin-top: auto;
         margin-bottom: auto;
         font-family: $fuente-principal;
-        font-size: 15px;
+        font-size: 24px;
         text-transform: $transformacion-fuente;
-        color: rgb(248, 15, 15);
+        color: rgb(0, 151, 13);
         justify-self: center;
 
         }
@@ -355,7 +355,7 @@
     grid-area: c3;
         
     font-family: $fuente-principal;
-    font-size: 12px;
+    font-size: 16px;
     text-transform: $transformacion-fuente;
     color: $color-primario;
     justify-self: center;
@@ -367,7 +367,7 @@
 
         grid-area: c5;
 
-        font-size: 25px;
+        font-size: 30px;
         font-family: $fuente-principal;
         color: $color-primario;
         justify-self: center;
@@ -378,10 +378,10 @@
 
         grid-area: c4;
 
-        height: 35px;
-        width: 85px;
+        height: 45px;
+        width: 95px;
         font-family: $fuente-principal;
-        font-size: 15px;
+        font-size: 17px;
         text-transform: $transformacion-fuente;
         text-align: center;
         background-color: $color-primario;

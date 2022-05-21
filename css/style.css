@@ -25,10 +25,9 @@ body {
 }
 
 .menu__logo {
-  width: 150px;
-  height: 60px;
+  width: 100px;
+  height: 80px;
   margin-left: 40px;
-  margin-top: 14px;
 }
 
 .menu__titulo {
@@ -317,8 +316,8 @@ body {
 }
 
 .footer1__imagen {
-  width: 150px;
-  height: 60px;
+  width: 110px;
+  height: 80px;
   margin-left: 40px;
 }
 
@@ -610,15 +609,15 @@ body {
 }
 
 .compra {
-  width: 40%;
+  width: 35%;
   height: 70%;
   margin-right: auto;
   margin-left: auto;
   margin-top: 20px;
   margin-bottom: 10%;
   display: grid;
-  grid-template-columns: 22% 22% 20%;
-  grid-template-rows: 60px 60px 60px 60px 60px;
+  grid-template-columns: 25% 25% 25%;
+  grid-template-rows: 65px 65px 65px 65px 65px;
   grid-template-areas: "c1 c1 c2" "c1 c1 c3" "c1 c1 c3" "c1 c1 c3" "c4 c5 c5";
   border: #b4c0cd solid 4px;
   border-radius: 10px;
@@ -627,8 +626,8 @@ body {
 
 .compra__imagen {
   grid-area: c1;
-  width: 100%;
-  height: 100%;
+  width: 90%;
+  height: 90%;
   margin: 5px;
 }
 
@@ -637,10 +636,11 @@ body {
   margin-top: auto;
   margin-bottom: auto;
   font-family: "Bungee Shade", cursiva "Orbitron", sans-serif;
-  font-size: 20px;
+  font-size: 22px;
   text-transform: uppercase;
-  color: #f80f0f;
+  color: #098315;
   justify-self: center;
+  margin-bottom: 10px;
 }
 
 .compra__detalle {
@@ -650,16 +650,18 @@ body {
   text-transform: uppercase;
   color: #24303c;
   justify-self: center;
+  transform: translateY(-5px) translatex(-35px);
 }
 
 .compra__precio {
   grid-area: c5;
   font-size: 25px;
+  font-size: 30px;
   font-family: "Bungee Shade", cursiva "Orbitron", sans-serif;
   color: #24303c;
   font-weight: bolder;
   justify-self: start;
-  transform: translateY(10px);
+  transform: translateY(5px) translatex(15px);
 }
 
 .compra__pagar {
@@ -674,7 +676,7 @@ body {
   color: white;
   border-radius: 8px;
   margin-left: 50%;
-  transform: translateY(15px);
+  transform: translateY(5px) translatex(-25px);
 }
 
 /* PAGINA PROMOCIONES  */
@@ -988,25 +990,25 @@ body {
     font-family: "Bungee Shade", cursiva "Orbitron", sans-serif;
     color: #24303c;
     text-transform: uppercase;
-    font-size: 25px;
+    font-size: 35px;
     border: 4px solid #24303c;
     border-radius: 15px;
     text-align: center;
-    width: 35%;
+    width: 65%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 5%;
   }
-  .comprar {
-    width: 40%;
-    height: 30%;
+  .compra {
+    width: 60%;
+    height: 55%;
     margin-right: auto;
     margin-left: auto;
     margin-top: 20px;
     margin-bottom: 10%;
     display: grid;
-    grid-template-columns: 22% 22% 20%;
-    grid-template-rows: 60px 60px 60px 60px 60px;
+    grid-template-columns: 25% 25% 25%;
+    grid-template-rows: 75px 75px 75px 75px 75px;
     grid-template-areas: "c1 c1 c2" "c1 c1 c3" "c1 c1 c3" "c1 c1 c3" "c4 c5 c5";
     border: #b4c0cd solid 4px;
     border-radius: 10px;
@@ -1014,23 +1016,23 @@ body {
   }
   .compra__imagen {
     grid-area: c1;
-    width: 100%;
-    height: 100%;
+    width: 95%;
+    height: 90%;
   }
   .compra__producto {
     grid-area: c2;
     margin-top: auto;
     margin-bottom: auto;
     font-family: "Bungee Shade", cursiva "Orbitron", sans-serif;
-    font-size: 15px;
+    font-size: 24px;
     text-transform: uppercase;
-    color: #f80f0f;
+    color: #00970d;
     justify-self: center;
   }
   .compra__detalle {
     grid-area: c3;
     font-family: "Bungee Shade", cursiva "Orbitron", sans-serif;
-    font-size: 12px;
+    font-size: 16px;
     text-transform: uppercase;
     color: #24303c;
     justify-self: center;
@@ -1038,7 +1040,7 @@ body {
   }
   .compra__precio {
     grid-area: c5;
-    font-size: 25px;
+    font-size: 30px;
     font-family: "Bungee Shade", cursiva "Orbitron", sans-serif;
     color: #24303c;
     justify-self: center;
@@ -1046,10 +1048,10 @@ body {
   }
   .compra__pagar {
     grid-area: c4;
-    height: 35px;
-    width: 85px;
+    height: 45px;
+    width: 95px;
     font-family: "Bungee Shade", cursiva "Orbitron", sans-serif;
-    font-size: 15px;
+    font-size: 17px;
     text-transform: uppercase;
     text-align: center;
     background-color: #24303c;
@@ -1556,35 +1558,38 @@ body {
     font-family: "Bungee Shade", cursiva "Orbitron", sans-serif;
     color: #24303c;
     text-transform: uppercase;
-    font-size: 15px;
-    border: 2px solid #24303c;
-    border-radius: 15px;
+    font-size: 20px;
+    border: 3px solid #24303c;
+    border-radius: 10px;
     text-align: center;
-    width: 50%;
+    width: 85%;
+    height: 30px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 5%;
+    margin-top: 10%;
     font-weight: bolder;
+    padding: auto;
   }
-  .comprar {
-    width: 65%;
-    height: 35%;
+  .compra {
+    width: 90%;
+    height: 50%;
     margin-right: auto;
     margin-left: auto;
-    margin-top: 20px;
+    margin-top: 15%;
     margin-bottom: 50%;
     display: grid;
-    grid-template-columns: 25% 25% 25%;
-    grid-template-rows: 55px 55px 55px 55px 55px;
-    grid-template-areas: "c1 c1 c2" "c1 c1 c3" "c1 c1 c3" "c1 c1 c3" "c4 c5 c5";
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 70px 70px 70px 70px 70px;
+    grid-template-areas: "c1 c1 c2" "c1 c1 c3" "c1 c1 c3" "c4 c5 c5";
     border: #b4c0cd solid 4px;
     border-radius: 10px;
-    justify-content: space-evenly;
+    justify-content: center;
+    align-items: center;
   }
   .compra__imagen {
     grid-area: c1;
-    width: 100%;
-    height: 90%;
+    width: 95%;
+    height: 80%;
     overflow: hidden;
     transform: translateX(-10px);
     transform: translateY(-10);
@@ -1598,35 +1603,36 @@ body {
     margin-top: auto;
     margin-bottom: auto;
     font-family: "Bungee Shade", cursiva "Orbitron", sans-serif;
-    font-size: 15px;
+    font-size: 18px;
     text-transform: uppercase;
-    color: #f80f0f;
+    color: #14870e;
     justify-self: center;
   }
   .compra__detalle {
     grid-area: c3;
     font-family: "Bungee Shade", cursiva "Orbitron", sans-serif;
-    font-size: 10px;
+    font-size: 13px;
     text-transform: uppercase;
     color: #24303c;
+    font-weight: bolder;
     justify-self: center;
-    transform: translateY(-5px);
+    transform: translatey(30px);
   }
   .compra__precio {
     grid-area: c5;
-    font-size: 18px;
+    font-size: 20px;
     font-family: "Bungee Shade", cursiva "Orbitron", sans-serif;
     color: #24303c;
     justify-self: center;
     font-weight: bolder;
-    transform: translatex(25px);
+    transform: translatey(50px) translatex(25px);
   }
   .compra__pagar {
     grid-area: c4;
     height: 38px;
-    width: 80px;
+    width: 90px;
     font-family: "Bungee Shade", cursiva "Orbitron", sans-serif;
-    font-size: 10px;
+    font-size: 15px;
     text-transform: uppercase;
     text-align: center;
     background-color: #24303c;

@@ -304,45 +304,47 @@
         font-family: $fuente-principal;
         color: $color-primario;
         text-transform: $transformacion-fuente;
-        font-size: 15px;
-        border: 2px solid $color-primario;
-        border-radius: 15px;
+        font-size: 20px;
+        border: 3px solid $color-primario;
+        border-radius: 10px;
         text-align: center; 
-        width: 50%;
+        width: 85%;
+        height: 30px;
         margin-left: auto;
         margin-right: auto; 
-        margin-top: 5%;
+        margin-top: 10%;
         font-weight: bolder;
+        padding: auto;
     }
 
-    .comprar{
+    .compra{
 
-    width: 65%;
-    height: 35%;
+    width: 90%; 
+    height: 50%;
     margin-right: auto;
     margin-left: auto;
-    margin-top: 20px;
+    margin-top: 15%;
     margin-bottom: 50%;
     display: grid;
-    grid-template-columns: 25% 25% 25% ;
-
-    grid-template-rows: 55px 55px 55px 55px 55px;
-
+    grid-template-columns: 30% 30% 30% ;
+    grid-template-rows: 70px 70px 70px 70px 70px;
     grid-template-areas:"c1 c1 c2"
                         "c1 c1 c3"
                         "c1 c1 c3"
-                        "c1 c1 c3"
                         "c4 c5 c5";
-
     border: #b4c0cd solid 4px;
     border-radius: 10px;
-    justify-content: space-evenly;
+    justify-content: center;
+    align-items: center;
+
+    
     }
 
     .compra__imagen{
+
     grid-area: c1;
-    width: 100%;
-    height: 90%;
+    width:95%;
+    height: 80%;
     overflow: hidden;
     transform: translateX(-10px);
     transform:translateY(-10);
@@ -359,9 +361,9 @@
         margin-top: auto;
         margin-bottom: auto;
         font-family: $fuente-principal;
-        font-size: 15px;
+        font-size: 18px;
         text-transform: $transformacion-fuente;
-        color: rgb(248, 15, 15);
+        color: rgb(20, 135, 14);
         justify-self: center;
 
     }
@@ -369,31 +371,32 @@
     .compra__detalle{
     grid-area: c3;
     font-family: $fuente-principal;
-    font-size: 10px;
+    font-size: 13px;
     text-transform: $transformacion-fuente;
     color: $color-primario;
+    font-weight: $estilo-fuente;
     justify-self: center;
-    transform:translateY(-5px) ;
+    transform: translatey(30px);
+
 
 }
 
     .compra__precio{
         grid-area: c5;
-        font-size: 18px;
+        font-size: 20px;
         font-family: $fuente-principal;
         color: $color-primario;
         justify-self: center;
         font-weight: $estilo-fuente;
-        transform: translatex(25px);
-    
+        transform: translatey(50px) translatex(25px);
 }
 
     .compra__pagar{
-        grid-area: c4;
+        grid-area: c4;  
         height: 38px;
-        width: 80px;
+        width: 90px;
         font-family: $fuente-principal;
-        font-size: 10px;
+        font-size: 15px;
         text-transform: $transformacion-fuente;
         text-align: center;
         background-color: $color-primario;
