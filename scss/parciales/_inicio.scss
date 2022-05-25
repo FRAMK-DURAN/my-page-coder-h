@@ -32,35 +32,144 @@
     align-items: center;
     justify-items: stretch;
 
-    &__imagen1{
-        grid-area: ele1;
-        margin: 10px;
-        height: 90%;
-        width: 250px;
-        transform: scaleX(0.9);
-        transition: transform 2s;
-        overflow: hidden;
-    }
     
     
-    
-    &__texto1{
-    
-        grid-area: ele2;
-    
+    .textos{
+
         font-family: $fuente-principal;
         font-size: 12px;
         text-transform: $transformacion-fuente;
         color: $color-primario;
         justify-self: center;
+
+    }
+    
+    &__texto1{
+        
+        @extend.textos;
+        grid-area: ele2;
+    
+        
+    }
+
+    &__texto2{
+        grid-area: ele7;
+        @extend.textos;
+    }
+    
+    &__texto3{
+    
+        grid-area: ele12 ;
+        @extend.textos;
+
+    }
+
+    
+    
+    
+
+    .cantidad{
+
+        font-family: $fuente-principal;
+        font-size: 12px;
+        text-transform: $transformacion-fuente;
+        text-align: center;
+        background-color: $color-primario;
+        color: white;
+        height: 32px;
+        width: 60px;
+        border-radius: 5px;
+        transform: translateX(15px);
+
+    }
+    
+    &__cantidad1{
+    
+        grid-area: ele4;
+        @extend.cantidad;
+    }
+
+    &__cantidad2{
+    
+        grid-area: ele9 ;
+        @extend.cantidad;
+    
+    }
+    
+    &__cantidad3{
+    
+        grid-area: ele14 ;
+        @extend.cantidad;
+        transform: translatex(-10px);
+    }
+    
+
+    .precio{
+        font-size: $fuente-precios;
+        font-family: $fuente-principal;
+        color: $color-primario;
+        font-weight: $estilo-fuente;
+    }
+    
+    &__precios1{
+    
+        grid-area: ele5;
+        @extend.precio;
+    }
+
+    &__precios2{
+    
+        grid-area: ele10;
+        @extend.precio;
+    }
+    
+    &__precios3{
+    
+        grid-area: ele15;
+        @extend.precio;
+    }
+
+    @mixin tall ($heigth, $width, $margin  ) {
+
+        height: $heigth;
+        width: $width;
+        margin: $margin;
+    }
+
+    &__imagen1{
+
+        grid-area: ele1;
+        @include tall(90%, 250px, 10px);
+        transform: scaleX(0.9);
+        transition: transform 2s;
+        overflow: hidden;
+    }
+    
+    &__imagen2{
+    
+        grid-area: ele6;
+        @include tall(90%, 250px, 10px);
+        transform: scaleX(0.9);
+        transition: transform 2s;
+        overflow: hidden;
+    
+    }
+    
+    &__imagen3{
+        
+        grid-area: ele11;
+        @include tall(90%, 250px, 10px);
+        transform: scaleX(0.9);
+        transition: transform 2s;
+        overflow: hidden;
     }
     
     &__comprar1{
     
         grid-area: ele3;
+        
+        @include tall(35px, 90px, 0);
         margin-left: 25px;
-        height: 35px;
-        width: 90px;
         font-family: $fuente-principal;
         font-size: 15px;
         text-transform: $transformacion-fuente;
@@ -72,80 +181,11 @@
     
     }
     
-    &__cantidad1{
-    
-        grid-area: ele4;
-        font-family: $fuente-principal;
-        font-size: 12px;
-        text-transform: $transformacion-fuente;
-        text-align: center;
-        background-color: $color-primario;
-        color: white;
-        height: 32px;
-        width: 60px;
-        border-radius: 5px;
-        transform: translateX(15px);  
-    }
-    
-    &__precios1{
-    
-        grid-area: ele5;
-    
-        font-size: $fuente-precios;
-        font-family: $fuente-principal;
-        color: $color-primario;
-        font-weight: $estilo-fuente;
-    
-    }
-    
-    &__imagen2{
-    
-        grid-area: ele6;
-        margin: 10px;
-        height: 90%;
-        width: 250px;
-        transform: scaleX(0.9);
-        transition: transform 2s;
-        overflow: hidden;
-    
-    }
-    
-    &__imagen3{
-        
-        grid-area: ele11;
-        margin: 10px;
-        height: 90%;
-        width: 250px;
-        transform: scaleX(0.9);
-        transition: transform 2s;
-        overflow: hidden;
-    }
-    
-    &__texto2{
-        grid-area: ele7;
-        font-family: $fuente-principal;
-        font-size: 12px;
-        text-transform: $transformacion-fuente;
-        color: $color-primario;
-    
-    }
-    
-    &__texto3{
-    
-        grid-area: ele12 ;
-        font-family: $fuente-principal;
-        font-size: 12px;
-        text-transform: $transformacion-fuente;
-        color: $color-primario;
-
-    }
-    
     &__comprar2{
     
         grid-area: ele8 ;
+        @include tall(35px, 90px, 0);
         margin-left: 25px;
-        height: 35px;
-        width: 90px;
         font-family: $fuente-principal;
         font-size: 15px;
         text-transform: $transformacion-fuente;
@@ -158,11 +198,10 @@
     }
     
     &__comprar3{
-    
+     
         grid-area: ele13 ;
+        @include tall(35px, 90px, 0);
         margin-left: 25px;
-        height: 35px;
-        width: 90px;
         font-family: $fuente-principal;
         font-size: 15px;
         text-transform: $transformacion-fuente;
@@ -174,56 +213,7 @@
     
     }
     
-    &__cantidad2{
-    
-        grid-area: ele9 ;
-        font-family: $fuente-principal;
-        font-size: 12px;
-        text-transform: $transformacion-fuente;
-        text-align: center;
-        background-color: $color-primario;
-        color: white;
-        height: 32px;
-        width: 60px;
-        border-radius: 5px;
-        transform: translateX(15px);   
-    
-    }
-    
-    &__cantidad3{
-    
-        grid-area: ele14 ;
-        font-family: $fuente-principal;
-        font-size: 12px;
-        text-transform: $transformacion-fuente;
-        text-align: center;
-        background-color: $color-primario;
-        color: white;
-        height: 32px;
-        width: 60px;
-        border-radius: 5px;
-        transform: translateX(15px); 
-    }
-    
-    &__precios2{
-    
-        grid-area: ele10;
-        font-size: $fuente-precios;
-        font-family: $fuente-principal;
-        color: $color-primario;
-        font-weight:$estilo-fuente;
-        
-    }
-    
-    &__precios3{
-    
-        grid-area: ele15;
-        font-size: $fuente-precios;
-        font-family: $fuente-principal;
-        color: $color-primario;
-        font-weight: $estilo-fuente;
-    
-    }
+
     
 
 }

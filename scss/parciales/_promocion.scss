@@ -116,3 +116,22 @@ justify-self: center;
     justify-content: space-evenly;
 
 }
+
+$mapa:(
+    
+    producto: #24303c,
+    detalle: #0569cc,
+    precio: #26a30c,
+    pagar: #f6f8fa,
+);
+
+@each $clave, $valor in $mapa {
+
+    .promo__#{$clave}{
+
+        color: $valor;
+
+    }
+    
+    
+}
