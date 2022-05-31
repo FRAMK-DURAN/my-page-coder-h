@@ -19,7 +19,7 @@
 
 .compra{
 
-width: 35%;
+width: 45%;
 height: 70%;
 margin-right: auto;
 margin-left: auto;
@@ -66,11 +66,11 @@ justify-content: space-evenly;
     grid-area: c3;
         
     font-family: $fuente-principal;
-    font-size: 12px;
+    font-size: 15px;
     text-transform: $transformacion-fuente;     
     color: #24303c;
     justify-self: center;
-    transform: translateY(-5px)  translatex(-35px) ;
+    transform: translateY(-2px)  translatex(5px) ;
     
     }
     
@@ -89,8 +89,8 @@ justify-content: space-evenly;
     &__pagar{
     
         grid-area: c4;
-        height: 35px;
-        width: 90px;
+        height: 40px;
+        width: 95px;
         font-family:  $fuente-principal;
         font-size: 15px;
         text-transform: $transformacion-fuente;

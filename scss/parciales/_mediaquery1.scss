@@ -3,254 +3,262 @@
 
 /* responsive mobile  */
 
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 950px ){
 
 
-    .buscados{
-
-        font-family: $fuente-principal;
-        color: $color-primario;
-        text-transform: $transformacion-fuente;
-        font-size: 20px;
-        border: 2px solid $color-primario;
+    .buscados {
+        font-family: "Bungee Shade", cursiva "Orbitron", sans-serif;
+        color: #24303c;
+        text-transform: uppercase;
+        font-size: 40px;
+        border: 2px solid #24303c;
         text-align: center;
         width: 50%;
         margin-left: auto;
-        margin-right: auto ;
-    
-    
-    }
-    
-
-    .articulos{
-
-        width: 99%;
-        height: 200px;
-        margin-left: auto;
         margin-right: auto;
+        color: #24303c;
+        margin-top: 20px;
+        border-radius: 8px;
+      }
+      
+      .articulos {
+        margin: 20px;
+        width: 98%;
+        height: 280px;
         display: grid;
-        grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% ;
-        grid-template-rows: 60px 60px 60px 60px 60px 60px 60px 60px;
-        grid-template-areas: " ele1 ele1 ele2 ele6 ele6 ele7 ele11 ele11 ele12"
-                            " ele1 ele1 ele2  ele6 ele6 ele7 ele11 ele11 ele12"
-                            " ele3 ele4 ele5  ele8 ele9 ele10 ele13 ele14 ele15";
+        grid-template-columns: 16% 16% 16% 16% 16% 16%;
+        grid-template-rows: 90px 90px 90px 90px 90px 90px;
+        grid-template-areas: " ele1 ele1 ele2 ele6 ele6 ele7"
+                            " ele1 ele1 ele2  ele6 ele6 ele7"
+                            " ele3 ele4 ele5  ele8 ele9 ele10";
         border: #b4c0cd solid 0.5px;
+        align-items: center;
         justify-items: center;
-        
-    }
-    
-    .articulos__imagen1{
-    
-        grid-area: ele1;
-        height: 90%;
-        width: 170px;
-        overflow: hidden;
-
-    }
-
-    .articulos__imagen1:hover{
-
-        transform: scale(1.05);
-    }
-    
-    .articulos__texto1{
-    
+      }
+      
+      .articulos .textos, .articulos .articulos__texto1, .articulos .articulos__texto2, .articulos .articulos__texto3, .articulos .texto1__titulo, .articulos .texto2__titulo, .articulos .texto1__detalle, .articulos .texto2__detalle, .articulos .texto3__detalle {
+        font-family: "Bungee Shade", cursiva "Orbitron", sans-serif;
+        color: #24303c;
+        justify-self: center;
+      }
+      
+      .articulos__texto1 {
         grid-area: ele2;
-        font-family: $fuente-principal;
-        font-size: 10px;
-        text-transform: $transformacion-fuente;
-        color: $color-primario;
-        justify-self: center;
-        transform: translatex(5px);
-        transform: translatey(5px);
-    
-    }
-    
-    .articulos__comprar1{
-    
-        grid-area: ele3;
-        margin-left: 25px;
-        height: 35px;
-        width: 65px;
-        font-family: $fuente-principal;
-        font-size: 12px;
-        text-transform: $transformacion-fuente;
-        text-align: center;
-        background-color: $color-primario;
-        color: white;
-        border-radius: 10px;
-    
-    
-    }
+        font-size: 18px;
 
-
-    .articulos__cantidad1{
-    
-        grid-area: ele4;
-        font-family: $fuente-principal;
-        font-size: 15px;
-        text-transform: $transformacion-fuente;
-        text-align: center;
-        background-color: $color-primario;
-        color: white;
-        height: 34px;
-        width: 50px;
-        border-radius: 8px;
-        transform: translatex(30px);
-    
-    }
-
-    
-    
-    .articulos__precios1{
-    
-        grid-area: ele5;
-        font-size: 20px;
-        font-family: $fuente-principal;
-        color: $color-primario;
-        font-weight: $estilo-fuente;
-        transform: translateX(5px);
-        
-    }
-    
-    .articulos__imagen2{
-    
-        grid-area: ele6;
-        height: 90%;
-        width: 170px;
-        overflow: hidden;
-        
-    }
-
-    .articulos__imagen2:hover{
-
-        transform: scale(1.05);
-    }
-    
-    .articulos__imagen3{
-        
-        grid-area: ele11;
-        height: 90%;
-        width: 170px;
-        overflow: hidden;
-    }
-
-    .articulos__imagen3:hover{
-
-        transform: scale(1.05);
-    }
-    
-
-    .articulos__texto2{
-    
+      }
+      
+      .articulos__texto2 {
         grid-area: ele7;
-        font-family: $fuente-principal;
-        font-size: 10px;
-        text-transform: $transformacion-fuente;
-        color: $color-primario;
-        justify-self: center;
-        transform: translatex(5px);
-        transform: translatey(5px);
-    
-    
-    }
-    
-    .articulos__texto3{
-    
-        grid-area: ele12 ;
-        font-family: $fuente-principal;
-        font-size: 10px;
-        text-transform: $transformacion-fuente;
-        color: $color-primario;
-        justify-self: center;
-        transform: translatex(5px);
-        transform: translatey(5px);
-    
-    
-    }
-    
-    .articulos__comprar2{
-    
-        grid-area: ele8 ;
-        margin-left: 25px;
-        height: 35px;
-        width: 65px;
-        font-family: $fuente-principal;
+        font-size: 18px;
+        
+      }
+      
+      .articulos__texto3 {
+        grid-area: ele12;
+        font-size: 18px;
+        display: none;
+      }
+      
+      .articulos .texto1__titulo {
+        grid-area: ele2;
+        font-size: 18px;
+      }
+      
+      .articulos .texto2__titulo {
+        grid-area: ele7;
+        font-size: 18px;
+       
+      }
+      
+      .articulos .texto1__detalle {
+        grid-area: ele2;
+        font-size: 15px;
+      }
+      
+      .articulos .texto2__detalle {
+        grid-area: ele7;
+        font-size: 15px;
+
+      }
+      
+      .articulos .texto3__detalle {
+        grid-area: ele12;
+        font-size: 15px;
+        display: none;
+      }
+      
+      .articulos .cantidad, .articulos .articulos__cantidad1, .articulos .articulos__cantidad2, .articulos .articulos__cantidad3 {
+        font-family: "Bungee Shade", cursiva "Orbitron", sans-serif;
         font-size: 12px;
-        text-transform: $transformacion-fuente;
+        text-transform: uppercase;
         text-align: center;
-        background-color: $color-primario;
+        background-color: #24303c;
         color: white;
-        border-radius: 10px;
-    }
-    
-    .articulos__comprar3{
-    
-        grid-area: ele13 ;
-        grid-area: ele3;
-        margin-left: 25px;
-        height: 35px;
-        width: 65px;
-        font-family: $fuente-principal;
-        font-size: 12px;
-        text-transform: $transformacion-fuente;
-        text-align: center;
-        background-color: $color-primario;
-        color: white;
-        border-radius: 10px;
-    
-    }
-    
-    .articulos__cantidad2{
-    
-        grid-area: ele9 ;
-        font-family: $fuente-principal;
-        font-size: 12px;
-        text-transform: $transformacion-fuente;
-        text-align: center;
-        background-color: $color-primario;
-        color: white;
-        height: 34px;
-        width: 50px;
-        border-radius: 8px;
-        transform: translatex(20px);
-    
-    }
-    
-    .articulos__cantidad3{
-    
-        grid-area: ele14 ;
-        font-family: $fuente-principal;
-        font-size: 12px;
-        text-transform: $transformacion-fuente;
-        text-align: center;
-        background-color: $color-primario;
-        color: white;
-        height: 34px;
-        width: 50px;
-        border-radius: 8px;
-        transform: translatex(20px);
-    }
-    
-    .articulos__precios2{
-    
+        height: 40px;
+        width: 60px;
+        border-radius: 5px;
+        transform: translateX(15px);
+      }
+      
+      .articulos__cantidad1 {
+        grid-area: ele4;
+      }
+      
+      .articulos__cantidad2 {
+        grid-area: ele9;
+        
+      }
+      
+      .articulos__cantidad3 {
+        grid-area: ele14;
+        transform: translatex(-10px);
+        display: none;
+      }
+      
+      .articulos .precio, .articulos .articulos__precios1, .articulos .articulos__precios2, .articulos .articulos__precios3 {
+        font-size: 25px;
+        font-family: "Bungee Shade", cursiva "Orbitron", sans-serif;
+        color: #24303c;
+        font-weight: bolder;
+      }
+      
+      .articulos__precios1 {
+        grid-area: ele5;
+      }
+      
+      .articulos__precios2 {
         grid-area: ele10;
-        font-size: 20px;
-        font-family: $fuente-principal;
-        color: $color-primario;
-        font-weight: $estilo-fuente;
-    }
-    
-    .articulos__precios3{
-    
+        
+      }
+      
+      .articulos__precios3 {
         grid-area: ele15;
-        font-size: 20px;
-        font-family: $fuente-principal;
-        color: $color-primario;
-        font-weight: $estilo-fuente;
+        display: none;
+      }
+      
+      .articulos__imagen1 {
+        grid-area: ele1;
+        height: 50%;
+        width: 200px;
+        margin: 10px;
+        transition: transform 2s;
+        overflow: hidden;
+        border: 3px solid gray;
+        border-radius: 15px;
+        border-image-slice: 2px;
+        align-items: center;
+        
+      }
+      
+      .articulos__contenedor1 {
+        grid-area: ele1;
+      }
+      
+      .articulos__imagen2 {
+        grid-area: ele6;
+        height: 50%;
+        width: 180px;
+        margin: 10px;
+        transition: transform 2s;
+        overflow: hidden;
+        border: 3px solid gray;
+        border-radius: 15px;
+        border-image-slice: 2px;
+        align-items: center;
+       
+      }
+      
+      .articulos__contenedor2 {
+        grid-area: ele6;
+       
+      }
+      
+      .articulos__imagen3 {
+        grid-area: ele11;
+        height: 50%;
+        width: 180px;
+        margin: 10px;
+        transition: transform 2s;
+        overflow: hidden;
+        border: 3px solid gray;
+        border-radius: 15px;
+        border-image-slice: 2px;
+        align-items: center;
+        display: none;
+      }
+      
+      .articulos__contenedor3 {
+        grid-area: ele11;
+        display: none;
+      }
+      
+      .articulos__comprar1 {
+        grid-area: ele3;
+        height: 40px;
+        width: 95px;
+        margin: 0;
+        margin-left: 25px;
+        font-family: "Bungee Shade", cursiva "Orbitron", sans-serif;
+        font-size: 15px;
+        text-transform: uppercase;
+        text-align: center;
+        background-color: #24303c;
+        color: white;
+        border-radius: 10px;
+        transform: translateX(25px);
+      }
+      
+      .articulos__comprar2 {
+        grid-area: ele8;
+        height: 40px;
+        width: 95px;
+        margin: 0;
+        margin-left: 25px;
+        font-family: "Bungee Shade", cursiva "Orbitron", sans-serif;
+        font-size: 15px;
+        text-transform: uppercase;
+        text-align: center;
+        background-color: #24303c;
+        color: white;
+        border-radius: 10px;
+        transform: translateX(25px);
+       
+      }
+      
+      .articulos__comprar3 {
+        grid-area: ele13;
+        height: 40px;
+        width: 95px;
+        margin: 0;
+        margin-left: 25px;
+        font-family: "Bungee Shade", cursiva "Orbitron", sans-serif;
+        font-size: 15px;
+        text-transform: uppercase;
+        text-align: center;
+        background-color: #24303c;
+        color: white;
+        border-radius: 10px;
+        transform: translateX(25px);
+        display: none;
+      }
+      
+      .articulos__imagen1:hover {
+        transform: scalex(1.5) scaleY(1.1);
+      }
+      
+      .articulos__imagen2:hover {
+        transform: scalex(1.6) scaleY(1.2);
+        
+      }
+      
+      .articulos__imagen3:hover {
+        transform: scalex(1.6) scaleY(1.2);
+        display: none;
+      }
 
 
-    }
+      /*  RESPONSIVE FOOTER 950 PX  */
 
     .footer1{
 
@@ -355,7 +363,7 @@
     grid-area: c3;
         
     font-family: $fuente-principal;
-    font-size: 16px;
+    font-size: 14px;
     text-transform: $transformacion-fuente;
     color: $color-primario;
     justify-self: center;
@@ -371,7 +379,7 @@
         font-family: $fuente-principal;
         color: $color-primario;
         justify-self: center;
-        transform: translatey(20px) translatex(30px);
+        transform: translatey(5px) translatex(30px);
     }
 
     .compra__pagar{
@@ -391,350 +399,491 @@
 
     }
 
-    /* responsive pagina promociones 1024px */
+    /* responsive pagina promociones  950px */
 
-    .promocion {
-
-        font-family: $fuente-principal;
-        color: $color-primario;
-        text-transform: $transformacion-fuente;
-        font-size: 30px;
-        border: 4px solid $color-primario;
-        border-radius: 15px;
-        text-align: center;
-        width: 45%;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 5%;
-        margin-bottom: 30px;
-    }
-
-    .promo {
-
-        width: 50%;
-        height: 35%;
-        margin-left: auto;
-        margin-right: auto;
-        display: grid;
-        grid-template-columns: 30% 30% 30%;
-        grid-template-rows: 80px 80px 80px 80px 80px;
-        grid-template-areas: "c1 c1 c2"
-                            "c1 c1 c3"
-                            "c1 c1 c3"
-                            "c1 c1 c3"
-                            "c4 c5 c5";
-        border: #b4c0cd solid 4px;
-        border-radius: 10px;
-        justify-content: space-evenly;
-    }
-
-    .promo2 {
-
-        width: 50%;
-        height: 35%;
-        margin-left: auto;
-        margin-right: auto;
-        display: grid;
-        grid-template-columns: 30% 30% 30%;
-        grid-template-rows: 80px 80px 80px 80px 80px;
-        grid-template-areas: "c1 c1 c2"
-                            "c1 c1 c3"
-                            "c1 c1 c3"
-                            "c1 c1 c3"
-                            "c4 c5 c5";
-        border: #b4c0cd solid 4px;
-        border-radius: 10px;
-        justify-content: space-evenly
-    }
-
-    .promo__imagen {
-
-        grid-area: c1;
-        width: 90%;
-        height: 90%;
-        margin: 5PX;
-    }
-
-    .promo__producto {
-        grid-area: c2;
-        margin-top: auto;
-        margin-bottom: auto;
-        font-family: $fuente-principal;
-        font-size: 25px;
-        text-transform: $transformacion-fuente;
-        color: #0a7b06;
-        justify-self: center;
-    }
-    .promo__detalle {
-
-        grid-area: c3;
-        font-size: 15px;
-        font-family: $fuente-principal;
-        text-transform: $transformacion-fuente;
-        color: $color-primario;
-        justify-self: center;
-    }
-    .promo__precio {
-
-        grid-area: c5;
-        font-size: 25px;
-        font-family: $fuente-principal;
-        color: $color-primario;
-        justify-self: start;
-        transform: translateX(85PX);
-    }
-    .promo__pagar {
-
-        grid-area: c4;
-        height: 35px;
-        width: 90px;
-        font-family: $fuente-principal;
-        font-size: 15px;
-        text-transform: $transformacion-fuente;
-        text-align: center;
-        background-color: $color-primario;
-        color: white;
-        border-radius: 10px;
-        margin-left: 50%;
-        transform: translateY(-3px);
-    }
+    .promocion{
 
 
-    /* mediaquery PAGINA PRODUCTOS 1024px */
+      font-family: $fuente-principal;
+      color: $color-primario;
+      text-transform: $transformacion-fuente;
+      font-size: 28px;
+      border: 4px solid $color-primario;
+      border-radius: 15px;
+      text-align: center;
+      width: 60%;
+      margin-left: auto;
+      margin-right: auto; 
+      margin-top: 5%;
+      margin-bottom: 30px;
+}
 
-    .titulo__producto{
+.promo{
 
-        font-family: $fuente-principal;
-        color: $color-primario;
-        text-transform: $transformacion-fuente;
-        font-size: 30px;
-        border: 4px solid $color-primario;
-        border-radius: 14px;
-        text-align: center;
-        width: 50%;
-        margin-left: auto;
-        margin-right: auto ;
-        color: $color-primario;
-        margin-top: 20px;
-    }
+  width: 70%;
+  height: 55%;
+  margin-bottom: 5%;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: 25% 25% 25% ;
+  grid-template-rows: 80px 80px 80px 80px 80px;
+  grid-template-areas:"c1 c1 c2"
+                      "c1 c1 c3"
+                      "c1 c1 c3"
+                      "c1 c1 c3"
+                      "c4 c5 c5";
+  border: #b4c0cd solid 4px;
+  border-radius: 10px;
+  justify-content: space-evenly;
+}
 
+.promo__imagen{
+
+  grid-area: c1;
+  width: 90%;
+  height: 100%;
+  margin: 5PX;
+  border: 3px solid gray;
+  border-radius: 15px;
+  border-image-slice: 2px;
+  box-shadow:  15px 15px 10px black;
+}
+
+
+
+.promo__contenedor{
+  grid-area: c1;
+}
+
+.promo__producto{
+
+  grid-area: c2;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-family: $fuente-principal;
+  font-size: 25px;
+  text-transform: $transformacion-fuente;
+  color: rgb(10, 123, 6);
+  justify-self: center;
+  overflow: hidden;
+
+}
+
+.promo__detalle{
+
+grid-area: c3;  
+font-size: 15px;
+font-family: $fuente-principal;
+text-transform: $transformacion-fuente;
+color: $color-primario;
+justify-self: center;
+
+}
+
+
+
+.promo__precio{
+
+  grid-area: c5;
+  font-size: 30px;
+  font-family: $fuente-principal;
+  color: $color-primario;
+  justify-self: start;
+  font-weight: $estilo-fuente;
+  transform: translateY(25px) translatex(20px);
+}
+
+.promo__pagar{
+
+  grid-area: c4;
+  height: 40px;
+  width: 100px;
+  font-family: $fuente-principal;
+  font-size: 15px;
+  text-transform: $transformacion-fuente;
+  text-align: center;
+  background-color: $color-primario;
+  color: white;
+  border-radius: 10px;
+  margin-left: 50%;
+  transform: translateY(25PX) translatex(-15PX);
+}
+
+.promo2{
+
+   width: 70%;
+  height: 55%;
+  margin-bottom: 5%;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: 25% 25% 25% ;
+  grid-template-rows: 80px 80px 80px 80px 80px;
+  grid-template-areas:"c1 c1 c2"
+                      "c1 c1 c3"
+                      "c1 c1 c3"
+                      "c1 c1 c3"
+                      "c4 c5 c5";
+
+  border: #b4c0cd solid 4px;
+  border-radius: 10px;
+  justify-content: space-evenly;
+
+}
+
+$mapa:(
+  
+  producto: #24303c,
+  detalle: #0569cc,
+  precio: #26a30c,
+  pagar: #f6f8fa,
+);
+
+@each $clave, $valor in $mapa {
+
+  .promo__#{$clave}{
+
+      color: $valor;
+
+  }
+  
+  
+}
+
+
+.vibrate-1 {
+-webkit-animation: vibrate-1 0.3s linear infinite both;
+animation: vibrate-1 0.3s linear infinite both;
+}
+
+
+@-webkit-keyframes vibrate-1 {
+  0% {
+  -webkit-transform: translate(0);
+          transform: translate(0);
+  }
+  20% {
+  -webkit-transform: translate(-2px, 2px);
+          transform: translate(-2px, 2px);
+  }
+  40% {
+  -webkit-transform: translate(-2px, -2px);
+          transform: translate(-2px, -2px);
+  }
+  60% {
+    -webkit-transform: translate(2px, 2px);
+          transform: translate(2px, 2px);
+  }
+  80% {
+    -webkit-transform: translate(2px, -2px);
+          transform: translate(2px, -2px);
+  }
+  100% {
+    -webkit-transform: translate(0);
+          transform: translate(0);
+  }
+}
+@keyframes vibrate-1 {
+  0% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+  20% {
+    -webkit-transform: translate(-2px, 2px);
+            transform: translate(-2px, 2px);
+  }
+  40% {
+    -webkit-transform: translate(-2px, -2px);
+            transform: translate(-2px, -2px);
+  }
+  60% {
+    -webkit-transform: translate(2px, 2px);
+            transform: translate(2px, 2px);
+  }
+  80% {
+    -webkit-transform: translate(2px, -2px);
+            transform: translate(2px, -2px);
+  }
+  100% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+
+
+    /* mediaquery PAGINA PRODUCTOS 950px */
+
+    /* PAGINA PRODUCTOS */
+
+.titulo__producto{
+
+  font-family: $fuente-principal;
+  color: $color-primario;
+  text-transform: $transformacion-fuente;
+  font-size: 30px;
+  border: 4px solid $color-primario;
+  border-radius: 18px;
+  text-align: center;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto ;
+  color: $color-primario;
+  margin-top: 20px;
+}
 .producto{
 
-    width: 95%;
-    height: 10%;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    display: grid;
-    grid-template-columns: 16% 16% 16% 16% 16% 16% ;
-    grid-template-rows: 45px 45px 45px 45px 45px 45px 45px;
-    grid-template-areas:    "ele1 ele1 ele7 ele7 ele12 ele12"
-                            "ele1 ele1 ele7 ele7 ele12 ele12"
-                            "ele1 ele1 ele7 ele7 ele12 ele12"
-                            "ele1 ele1 ele7 ele7 ele12 ele12"
-                            "ele2 ele2 ele8 ele8 ele13 ele13"
-                            "ele3 ele4 ele9 ele10 ele14 ele15"
-                            "ele5 ele5 ele11 ele11 ele16 ele16";
-    border: #b4c0cd solid 0.5px;
-    justify-content: center;
-    align-items: center;
-   
+  width: 95%;
+  height: 10%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: 16% 16% 16% 16% 16% 16% ;
+  grid-template-rows: 45px 45px 45px 45px 45px 45px 45px;
+  grid-template-areas:    "ele1 ele1 ele7 ele7 ele12 ele12"
+                          "ele1 ele1 ele7 ele7 ele12 ele12"
+                          "ele1 ele1 ele7 ele7 ele12 ele12"
+                          "ele1 ele1 ele7 ele7 ele12 ele12"
+                          "ele2 ele2 ele8 ele8 ele13 ele13"
+                          "ele3 ele4 ele9 ele10 ele14 ele15"
+                          "ele5 ele5 ele11 ele11 ele16 ele16";
+  border: #b4c0cd solid 0.5px;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+  
+  &__imagen1{
+
+      grid-area: ele1;
+      width: 140px;
+      height: 150px;
+      border: 3px solid gray;
+      border-radius: 15px;
+      border-image-slice: 2px;
+      box-shadow:  15px 15px 10px #24303c;  
+      transform: translateX(15px);
+  
+  }
+
+  &__contenedor1{
+
+      grid-area: ele1;
+      justify-items: center;
+  }
+  
+  &__texto1{
+  
+      grid-area: ele2;
+  
+      font-family: $fuente-principal;
+      font-size: 18px;
+      text-transform: $transformacion-fuente;
+      color: $color-primario;
+      margin: 5px;
+      transform: translateX(15px);
+  
+  }
+  
+  &__cantidad1{
+  
+      grid-area: ele3;
+      font-family: $fuente-principal;
+      font-size: 18px;
+      text-transform: $transformacion-fuente;
+      text-align: center;
+      background-color: $color-primario;
+      color: white;
+      height: 35px;   
+      width: 60px;
+      border-radius: 8px;
+      justify-self: center;
+      margin-left: 20px;
+  
+  }
+  
+  &__precio1{
+      grid-area: ele4;
+  
+      font-size: $fuente-precios;
+      font-family: $fuente-principal;
+      color: $color-primario;
+      font-weight: $estilo-fuente;
+  }
+  
+  &__comprar1{
+      grid-area: ele5;
+      height: 35px;
+      width: 100px;
+      font-family: $fuente-principal;
+      font-size: 15px;
+      text-transform: $transformacion-fuente;
+      text-align: center;
+      background-color: $color-primario;
+      color: white;
+      border-radius: 10px;
+  
+  }
+  
+  /* bloque centro  */
+  &__imagen2{
+  
+      grid-area: ele7;
+      width: 140px;
+      height: 150px;
+      margin: 5px;
+      border: 3px solid gray;
+      border-radius: 15px;
+      border-image-slice: 2px;
+      box-shadow:  15px 15px 10px #24303c; 
+      transform: translateX(15px); 
+
+
+
+  }
+
+  &__contenedor2{
+
+      grid-area: ele7;
+  }
+  
+  &__texto2{
+  
+      grid-area: ele8;
+  
+      font-family: $fuente-principal;
+      font-size: 20px;
+      margin: 5px;
+      text-transform: $transformacion-fuente;
+      color: $color-primario;
+      transform: translateX(15px);
+  
+  }
+  
+  &__cantidad2{
+      grid-area: ele9;
+  
+      font-family: $fuente-principal;
+      font-size: 18px;
+      text-transform: $transformacion-fuente;
+      text-align: center;
+      background-color: $color-primario;
+      color: white;
+      height: 35px;
+      width: 60px;
+      border-radius: 8px;
+      margin-left: 20px;  
+
+  
+  }
+  
+  &__precio2{
+      grid-area: ele10;
+  
+      font-size:$fuente-precios;
+      font-family: $fuente-principal;
+      color: $color-primario;
+      font-weight: $estilo-fuente;
+
+  }
+  
+  &__comprar2{
+      grid-area: ele11;
+  
+      height: 35px;
+      width: 100px;
+      font-family: $fuente-principal;
+      font-size: 15px;
+      text-transform: $transformacion-fuente;
+      text-align: center;
+      background-color: $color-primario;
+      color: white;
+      border-radius: 10px;
+
+  
+  }
+  
+  /* bloque izquierda */
+  
+  &__imagen3{
+  
+      grid-area: ele12;
+      width: 140px;
+      height: 150px;
+      margin: 5px;
+      border: 3px solid gray;
+      border-radius: 15px;
+      border-image-slice: 2px;
+      box-shadow:  15px 15px 10px #24303c;  
+      transform: translateX(15px);
+
+
+  
+  }
+
+  &__contenedor3{
+
+      grid-area: ele12;
+  }
+  
+  &__texto3{
+  
+      grid-area: ele13;
+      font-family: $fuente-principal;
+      font-size: 18px;
+      text-transform: $transformacion-fuente;
+      color: $color-primario;
+      margin: 5px;
+      transform: translateX(15px);
+  
+      
+  
+  }
+  
+  &__cantidad3{
+      grid-area: ele14;
+  
+      font-family: $fuente-principal;
+      font-size: 18px;
+      text-transform: $transformacion-fuente;
+      text-align: center;
+      background-color: $color-primario;
+      color: white;
+      height: 35px;
+      width: 60px;
+      border-radius: 8px;
+      justify-self: center;
+      margin-left: 20px; 
+  
+  }
+  
+  &__precio3{
+      grid-area: ele15;
+  
+      font-size: $fuente-precios;
+      font-family: $fuente-principal;
+      font-weight: $estilo-fuente;
+      justify-self: start;
+  }
+  
+  &__comprar3{
+      grid-area: ele16;
+      height: 35px;
+      width: 100px;
+      font-family: $fuente-principal;
+      font-size: 15px;
+      text-transform: $transformacion-fuente;
+      text-align: center;
+      background-color: $color-primario;
+      color: white;
+      border-radius: 10px;
+
+  
+  }
 }
 
-.producto__imagen1{
 
-    grid-area: ele1;
-
-    height: 90%;
-    width: 90%;
-    transform: translateY(5px);
-    transform: translatex(8px);
-
-
-
-}
-
-.producto__texto1{
-
-    grid-area: ele2;
-    font-family: $fuente-principal;
-    font-size: 17px;
-    font-weight: $estilo-fuente;
-    text-transform: $transformacion-fuente;
-    color: $color-primario;
-    justify-self: center;
-
-}
-
-.producto__cantidad1{
-
-    grid-area: ele3;
-    font-family: $fuente-principal;
-    font-size: 12px;
-    text-transform: $transformacion-fuente;
-    text-align: center;
-    background-color: $color-primario;
-    color: white;
-    height: 35px;
-    width: 60px;
-    border-radius: 8px;
-    justify-self: center;   
-    transform: translateX(10px);
-
-}
-
-.producto__precio1{
-    grid-area: ele4;
-    font-size: 25px;
-    font-family: $fuente-principal;
-    color: $color-primario;
-    justify-self: start;
-}
-
-.producto__comprar1{
-
-    grid-area: ele5;
-    height: 35px;
-    width: 90px;
-    font-family: $fuente-principal;
-    font-size: 15px;
-    text-transform: $transformacion-fuente;
-    text-align: center;
-    background-color: $color-primario;
-    color: white;
-    border-radius: 10px;
-    justify-self: center;
-
-}
-
-/* bloque centro  */
-.producto__imagen2{
-
-    grid-area: ele7;
-    height: 90%;
-    width: 90%;
-    transform: translateY(5px);
-    transform: translatex(8px);
-}
-
-.producto__texto2{
-
-    grid-area: ele8;
-
-    font-family: $fuente-principal;
-    font-size: 17px;
-    font-weight: $estilo-fuente;
-    text-transform: $transformacion-fuente;
-    color: $color-primario;
-    justify-self: center;
-
-}
-
-.producto__cantidad2{
-    grid-area: ele9;
-
-    font-family: $fuente-principal;
-    font-size: 10px;
-    text-transform: $transformacion-fuente;
-    text-align: center;
-    background-color: $color-primario;
-    color: white;
-    height: 35px;
-    width: 60px;
-    border-radius: 8px;
-    justify-self: center;
-    transform: translateX(10px);
-
-}
-
-.producto__precio2{
-    grid-area: ele10;
-
-    font-size: 25px;
-    font-family: $fuente-principal;
-    color: $color-primario;
-    justify-self: start;
-}
-
-.producto__comprar2{
-    grid-area: ele11;
-
-    height: 35px;
-    width: 90px;
-    font-family: $fuente-principal;
-    font-size: 15px;
-    text-transform: $transformacion-fuente;
-    text-align: center;
-    background-color: $color-primario;
-    color: white;
-    border-radius: 10px;
-    justify-self: center;
-
-}
-
-/* bloque izquierda */
-
-.producto__imagen3{
-
-    grid-area: ele12;
-
-    height: 90%;
-    width: 90%;
-    transform: translateY(5px);
-    transform: translatex(8px);
-
-}
-
-.producto__texto3{
-
-    grid-area: ele13;
-    font-family: $fuente-principal;
-    font-size: 17px;
-    font-weight: $estilo-fuente;
-    text-transform: $transformacion-fuente;
-    color: $color-primario;
-    justify-self: center;
-}
-
-.producto__cantidad3{
-    grid-area: ele14;
-
-    font-family: $fuente-principal;
-    font-size: 10px;
-    text-transform: $transformacion-fuente;
-    text-align: center;
-    background-color: $color-primario;
-    color: white;
-    height: 35px;
-    width: 60px;
-    border-radius: 8px;
-    justify-self: center;
-    transform: translateX(10px);
-}
-
-.producto__precio3{
-    grid-area: ele15;
-
-    font-size: 25px;
-    font-family: $fuente-principal;
-    justify-self: start;
-}
-
-.producto__comprar3{
-    grid-area: ele16;
-    height: 35px;
-    width: 90px;
-    font-family: $fuente-principal;
-    font-size: 15px;
-    text-transform: $transformacion-fuente;
-    text-align: center;
-    background-color: $color-primario;
-    color: white;
-    border-radius: 10px;
-    justify-self: center;
-
-}
 
     
 

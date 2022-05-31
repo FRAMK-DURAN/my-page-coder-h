@@ -40,10 +40,20 @@
 .promo__imagen{
 
     grid-area: c1;
-    width: 100%;
+    width: 90%;
     height: 100%;
     margin: 5PX;
-}  
+    border: 3px solid gray;
+    border-radius: 15px;
+    border-image-slice: 2px;
+    box-shadow:  15px 15px 10px black;
+}
+
+
+
+.promo__contenedor{
+    grid-area: c1;
+}
 
 .promo__producto{
 
@@ -55,6 +65,8 @@
     text-transform: $transformacion-fuente;
     color: rgb(10, 123, 6);
     justify-self: center;
+    overflow: hidden;
+
 }
 
 .promo__detalle{
@@ -67,6 +79,8 @@ color: $color-primario;
 justify-self: center;
 
 }
+
+
 
 .promo__precio{
 
@@ -82,8 +96,8 @@ justify-self: center;
 .promo__pagar{
 
     grid-area: c4;
-    height: 35px;
-    width: 90px;
+    height: 40px;
+    width: 100px;
     font-family: $fuente-principal;
     font-size: 15px;
     text-transform: $transformacion-fuente;
@@ -135,3 +149,64 @@ $mapa:(
     
     
 }
+
+
+.vibrate-1 {
+	-webkit-animation: vibrate-1 0.3s linear infinite both;
+	animation: vibrate-1 0.3s linear infinite both;
+}
+
+
+ @-webkit-keyframes vibrate-1 {
+    0% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+    }
+    20% {
+    -webkit-transform: translate(-2px, 2px);
+            transform: translate(-2px, 2px);
+    }
+    40% {
+    -webkit-transform: translate(-2px, -2px);
+            transform: translate(-2px, -2px);
+    }
+    60% {
+      -webkit-transform: translate(2px, 2px);
+            transform: translate(2px, 2px);
+    }
+    80% {
+      -webkit-transform: translate(2px, -2px);
+            transform: translate(2px, -2px);
+    }
+    100% {
+      -webkit-transform: translate(0);
+            transform: translate(0);
+    }
+  }
+  @keyframes vibrate-1 {
+    0% {
+      -webkit-transform: translate(0);
+              transform: translate(0);
+    }
+    20% {
+      -webkit-transform: translate(-2px, 2px);
+              transform: translate(-2px, 2px);
+    }
+    40% {
+      -webkit-transform: translate(-2px, -2px);
+              transform: translate(-2px, -2px);
+    }
+    60% {
+      -webkit-transform: translate(2px, 2px);
+              transform: translate(2px, 2px);
+    }
+    80% {
+      -webkit-transform: translate(2px, -2px);
+              transform: translate(2px, -2px);
+    }
+    100% {
+      -webkit-transform: translate(0);
+              transform: translate(0);
+    }
+  }
+  

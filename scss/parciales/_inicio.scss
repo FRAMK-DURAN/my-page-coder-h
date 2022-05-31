@@ -19,26 +19,22 @@
 .articulos{
 
     margin: 20px;
-    width: 98%;
+    width: 95%;
     height: 280px;
     display: grid;
-    grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% ;
-    grid-template-rows: 80px 80px 80px 80px 80px 80px 80px 80px 80px;
+    grid-template-columns: 11% 11% 11% 11% 10% 11% 11% 11% 11% ;
+    grid-template-rows: 90px 90px 90px 90px 90px 90px 90px 90px 90px;
     grid-template-areas: " ele1 ele1 ele2 ele6 ele6 ele7 ele11 ele11 ele12"
                         " ele1 ele1 ele2  ele6 ele6 ele7 ele11 ele11 ele12"
                         " ele3 ele4 ele5  ele8 ele9 ele10 ele13 ele14 ele15";
     border: #b4c0cd solid 0.5px;
-    justify-content: space-around;
     align-items: center;
-    justify-items: stretch;
+    justify-items: center;
 
-    
     
     .textos{
 
         font-family: $fuente-principal;
-        font-size: 12px;
-        text-transform: $transformacion-fuente;
         color: $color-primario;
         justify-self: center;
 
@@ -48,6 +44,7 @@
         
         @extend.textos;
         grid-area: ele2;
+        font-size: 18px;
     
         
     }
@@ -55,12 +52,56 @@
     &__texto2{
         grid-area: ele7;
         @extend.textos;
+        font-size: 18px;
     }
     
     &__texto3{
     
         grid-area: ele12 ;
         @extend.textos;
+        font-size: 18px;
+
+    }
+
+    .texto1__titulo{
+
+        @extend.textos;
+        grid-area: ele2;
+        font-size: 18px;
+
+
+    }
+
+    .texto2__titulo{
+
+        grid-area: ele7;
+        @extend.textos;
+        font-size: 18px;
+
+
+    }
+
+    .texto1__detalle{
+
+        @extend.textos;
+        grid-area: ele2;
+        font-size: 15px;
+
+    }
+
+    .texto2__detalle{
+
+        @extend.textos;
+        grid-area: ele7;
+        font-size: 15px;
+
+    }
+
+    .texto3__detalle{
+
+        @extend.textos;
+        grid-area: ele12;
+        font-size: 15px;
 
     }
 
@@ -76,7 +117,7 @@
         text-align: center;
         background-color: $color-primario;
         color: white;
-        height: 32px;
+        height: 40px;
         width: 60px;
         border-radius: 5px;
         transform: translateX(15px);
@@ -136,39 +177,64 @@
         margin: $margin;
     }
 
+
     &__imagen1{
 
         grid-area: ele1;
-        @include tall(90%, 250px, 10px);
-        transform: scaleX(0.9);
+        @include tall(50%, 200px, 10px);
         transition: transform 2s;
         overflow: hidden;
+        border: 3px solid gray;
+        border-radius: 15px;
+        border-image-slice: 2px;
+        align-items: center;
+    }
+
+    &__contenedor1{
+
+        grid-area: ele1;
     }
     
     &__imagen2{
     
         grid-area: ele6;
-        @include tall(90%, 250px, 10px);
-        transform: scaleX(0.9);
+        @include tall(50%, 180px, 10px);
         transition: transform 2s;
         overflow: hidden;
+        border: 3px solid gray;
+        border-radius: 15px;
+        border-image-slice: 2px;
+        align-items: center;
     
+    }
+
+    &__contenedor2{
+
+        grid-area: ele6;
     }
     
     &__imagen3{
         
         grid-area: ele11;
-        @include tall(90%, 250px, 10px);
-        transform: scaleX(0.9);
+        @include tall(50%, 180px, 10px);
         transition: transform 2s;
         overflow: hidden;
+        border: 3px solid gray;
+        border-radius: 15px;
+        border-image-slice: 2px;
+        align-items: center;
+    }
+
+    &__contenedor3{
+
+        grid-area: ele11;
     }
     
     &__comprar1{
     
         grid-area: ele3;
         
-        @include tall(35px, 90px, 0);
+        @include tall(40px, 95px, 0);
         margin-left: 25px;
         font-family: $fuente-principal;
         font-size: 15px;
@@ -184,7 +250,7 @@
     &__comprar2{
     
         grid-area: ele8 ;
-        @include tall(35px, 90px, 0);
+        @include tall(40px, 95px, 0);
         margin-left: 25px;
         font-family: $fuente-principal;
         font-size: 15px;
@@ -200,7 +266,7 @@
     &__comprar3{
      
         grid-area: ele13 ;
-        @include tall(35px, 90px, 0);
+        @include tall(40px, 95px, 0);
         margin-left: 25px;
         font-family: $fuente-principal;
         font-size: 15px;
@@ -222,17 +288,17 @@
 
 .articulos__imagen1:hover{
     
-    transform: scaley(1.2);
+    transform: scalex(1.5) scaleY(1.1);
 }
 
 .articulos__imagen2:hover{
 
-    transform: scaley(1.2);
+    transform: scalex(1.6) scaleY(1.2);
 
 }
 
 .articulos__imagen3:hover{
 
-    transform: scaley(1.2);
+    transform: scalex(1.6) scaleY(1.2);
 }
 
