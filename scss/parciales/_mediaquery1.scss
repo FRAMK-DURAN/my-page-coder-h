@@ -5,6 +5,21 @@
 
 @media screen and (max-width: 950px ){
 
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+
+    font-family: $fuente-principal;
+    background-color: white;
+    background-image: linear-gradient(to left,#54718e,white );
+
+}
+
+
 
     .buscados {
         font-family: "Bungee Shade", cursiva "Orbitron", sans-serif;
@@ -22,8 +37,8 @@
       }
       
       .articulos {
-        margin: 20px;
-        width: 98%;
+        margin: 10px;
+        width: 97%;
         height: 280px;
         display: grid;
         grid-template-columns: 16% 16% 16% 16% 16% 16%;

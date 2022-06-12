@@ -8,8 +8,10 @@
     border-radius: 8px;
     font-family: $fuente-principal;
     margin-top: 100px;
+    border-image-slice: 2px;
+    box-shadow:  15px 15px 10px #232b32;
 
-
+    
     &__titulo{
 
         margin-top: 5%;

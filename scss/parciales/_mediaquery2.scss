@@ -86,6 +86,7 @@
       .articulos .texto2__detalle {
         grid-area: ele7;
         font-size: 15px;
+        
 
       }
       
@@ -101,24 +102,26 @@
         text-align: center;
         background-color: #24303c;
         color: white;
-        height: 40px;
+        height: 38px;
         width: 60px;
         border-radius: 5px;
-        transform: translateX(15px);
+        transform: translateX(15px) translateY(-5px);
+        
       }
       
       .articulos__cantidad1 {
         grid-area: ele4;
+        
       }
       
       .articulos__cantidad2 {
         grid-area: ele9;
-        
+    
       }
       
       .articulos__cantidad3 {
         grid-area: ele14;
-        transform: translatex(-10px);
+      
 
       }
       
@@ -212,7 +215,7 @@
         background-color: #24303c;
         color: white;
         border-radius: 10px;
-        transform: translateX(25px);
+        transform: translateX(25px) translateY(-3px);
         margin-bottom: 10px;
       }
       
@@ -229,7 +232,7 @@
         background-color: #24303c;
         color: white;
         border-radius: 10px;
-        transform: translateX(25px);
+        transform: translateX(25px) translateY(-5px);
       
       }
       
@@ -247,7 +250,7 @@
         background-color: #24303c;
         color: white;
         border-radius: 10px;
-        transform: translateX(25px);
+        transform: translateX(25px) translateY(-5px);
       }
       
       .articulos__imagen1:hover {
@@ -559,7 +562,6 @@ $mapa:(
   
 }
 
-
 .vibrate-1 {
 -webkit-animation: vibrate-1 0.3s linear infinite both;
 animation: vibrate-1 0.3s linear infinite both;
@@ -832,9 +834,6 @@ animation: vibrate-1 0.3s linear infinite both;
           box-shadow:  15px 15px 10px #24303c;  
           transform: translateX(-15px); 
       
-    
-    
-      
       }
     
       &__contenedor3{
@@ -893,12 +892,91 @@ animation: vibrate-1 0.3s linear infinite both;
           background-color: $color-primario;
           color: white;
           border-radius: 10px;
-    
-      
+          transform: translateX(20px);
       }
+
+      &__compras3{
+        
+        grid-area: p15;
+        height: 35px;
+        width: 100px;
+        font-family: $fuente-principal;
+        font-size: 15px;
+        text-transform: $transformacion-fuente;
+        text-align: center;
+        transform: translateX(20px);
+    }
 
   
     }
+
+     /* RESPONSIVE FORMULARIO REGISTRO 650PX  */
+    .formulario{
+
+      width: 320px; 
+      padding: 30px;
+      margin: auto;
+      margin-bottom: 10%;
+      background-color: $color-primario;
+      border-radius: 8px;
+      font-family: $fuente-principal;
+      margin-top: 100px;
+      border-image-slice: 2px;
+      box-shadow:  15px 15px 10px #232b32;
+  
+      
+      &__titulo{
+  
+          margin-top: 5%;
+          margin-bottom: 5%;
+          font-size: 15px;
+          text-align: center; 
+          color: white;
+      }
+  
+      &__campos{
+  
+          width: 100%;
+          background: #24303c;
+          color: white;
+          padding: 10px;
+          font-family: $fuente-principal;
+          border-bottom: 20px;
+          border-radius: 10px;
+          border: 3px solid rgb(31, 3, 184);
+          text-transform: $transformacion-fuente;
+          margin: 10px;
+      }
+  
+      &__boton{
+  
+      display: block;
+      width: 50%;
+      margin: 15px;
+      height: 30px;
+      border-radius: 4px;
+      font-size: 15px;
+      cursor: pointer;
+      margin-left: auto;
+      margin-right: auto;
+  
+      }
+  
+      &__texto{
+  
+          text-decoration: none;
+          color: white;
+          margin: 10px;
+          text-align: center;
+          text-decoration: none;
+          font-family: $fuente-principal;
+  
+      }  
+  }
+  
+  
+    
+
     
 
 
